@@ -1,0 +1,22 @@
+kind: pipeline
+type: docker
+name: default
+
+platform:
+  arch: arm64
+  os: linux
+
+volumes:
+  - name: www
+    host:
+      path: /usr/share/caddy/the-digital-garden
+
+steps:
+- name: deploy
+  image: hugo-obsidian:2.18
+  volumes:
+  - name: www
+    path: /drone/src/build
+  commands:
+  - hugo-obsidian -input=content -output=assets/indices -index -root=.
+  - hugo -d build

@@ -1,0 +1,175 @@
+{
+  "main": {
+    "id": "58c5b4a28338a1ae",
+    "type": "split",
+    "children": [
+      {
+        "id": "5db6f07ba7dba150",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f4a24fb7d71d1c93",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/2022-12-17-Neurons.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e5e0db2c8c314fb8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/2022-12-17-Neurons.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1c888b966ccdcd51",
+    "type": "split",
+    "children": [
+      {
+        "id": "c77a79be076eddae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e0e94725ad525bed",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a40f2d3caa7901bf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#setup",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "98ae4f94f4a19fe8",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b5b730e25fbb94c3",
+    "type": "split",
+    "children": [
+      {
+        "id": "5280f15433e403dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "90e82720dea41daf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "notes/2022-12-17-Neurons.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6f9f58e7455cc689",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "notes/2022-12-17-Neurons.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "01b97c16010f514c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "cd872a636259254d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "notes/2022-12-17-Neurons.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "f4a24fb7d71d1c93",
+  "lastOpenFiles": [
+    "notes/2022-12-15-McCulloch-Pitts-Neurons.md",
+    "notes/2022-12-17-Neurons.md",
+    "_index.md",
+    "templates/post.md",
+    "生物神经元.md",
+    "未命名.canvas",
+    "media/生物神经元.png.md",
+    "notes/images/neurons-bucket.svg",
+    "notes/images/05bb6a6bb72acb6123efaa4b5131871a_MD5.png",
+    "notes/images/83eb9cdcbb680e1edee0c46014bad04b_MD5.png"
+  ]
+}

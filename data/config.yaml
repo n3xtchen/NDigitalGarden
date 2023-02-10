@@ -1,0 +1,46 @@
+name: N3xtchen
+
+# 目录
+enableToc: true
+openToc: true
+
+enableLinkPreview: true
+
+enableMermaid: true
+
+enableLatex: true
+
+enableCodeBlockTitle: true
+enableCodeBlockCopy: true
+
+enableCallouts: true
+
+enableSPA: true
+
+enableFooter: true
+
+enableContextualBacklinks: true
+
+# 展示最近的更新的文档
+enableRecentNotes: true
+
+# github 编辑
+enableGitHubEdit: true
+
+GitHubLink: https://github.com/n3xtchen/the-digital-garden
+
+search:
+  enableSemanticSearch: false
+  operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
+  operandIndexId: "REPLACE-WITH-YOUR-OPERAND-INDEX-ID"
+
+description:
+  Host your second brain and digital garden for free. Quartz features extremely fast full-text search,
+  Wikilink support, backlinks, local graph, tags, and link previews.
+page_title:
+  "N3xtchen 的数字花园"
+links:
+  - link_name: Twitter
+    link: https://twitter.com/mn3xt
+  - link_name: Github
+    link: https://github.com/n3xtchen

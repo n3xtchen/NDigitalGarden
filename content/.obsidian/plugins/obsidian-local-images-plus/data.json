@@ -1,0 +1,15 @@
+{
+  "useCaptions": true,
+  "useRelativePath": true,
+  "mediaFolderSuff": "",
+  "downUnknown": false,
+  "saveAtt": "nextToNoteS",
+  "realTimeUpdate": false,
+  "filesizeLimit": 0,
+  "realTimeUpdateInterval": 5,
+  "addNameOfFile": true,
+  "showNotifications": true,
+  "include": ".*\\.md",
+  "mediaRootDirectory": "images",
+  "useWikilinks": false
+}
