@@ -62,6 +62,8 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: "== to mark"
+        run: find public -name '*.html' | xargs -I {} sudo sed -i 's/==\(.*\)==/<mark>\1<\\/mark>/g' {}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
