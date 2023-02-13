@@ -20,3 +20,4 @@ steps:
   commands:
   - hugo-obsidian -input=content -output=assets/indices -index -root=.
   - hugo -d build
+  - find build -name '*.html' | xargs -I {} sed -i 's/==\(.*\)==/<mark>\1<\\/mark>/g' {}
