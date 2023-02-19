@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/2023-02-16-SQL-basic.md",
+                "file": "notes/2023-02-18-sql-trick.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/2023-02-16-SQL-basic.md",
+                "file": "notes/2023-02-18-sql-trick.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/2023-02-16-SQL-basic.md",
+                "file": "notes/2023-02-18-sql-trick.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/2023-02-16-SQL-basic.md"
+                "file": "notes/2023-02-18-sql-trick.md"
               }
             }
           }
@@ -162,14 +162,14 @@
   "active": "f4a24fb7d71d1c93",
   "lastOpenFiles": [
     "notes/2023-02-17-SQL-window-function.md",
-    "notes/2022-12-15-McCulloch-Pitts-Neurons.md",
-    "notes/2022-12-17-Neurons.md",
+    "未命名.md",
     "_index.md",
+    "notes/2023-02-18-sql-trick.md",
+    "notes/2023-02-16-SQL-basic.md",
+    "notes/2022-12-17-Neurons.md",
+    "notes/2022-12-15-McCulloch-Pitts-Neurons.md",
     "templates/post.md",
     "生物神经元.md",
-    "未命名.canvas",
-    "media/生物神经元.png.md",
-    "notes/images/neurons-bucket.svg",
-    "notes/images/05bb6a6bb72acb6123efaa4b5131871a_MD5.png"
+    "未命名.canvas"
   ]
 }
