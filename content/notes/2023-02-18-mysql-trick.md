@@ -1,9 +1,16 @@
+---
+title: "MySQL 的小技巧"
+created: 2023-02-20 15:55
+tags:
+- sql
+---
 
 ### 文件导出
 
+```sql
 <select 语句> 
 INTO OUTFILE '/Users/nextchen/z.csv' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n'
-
+```
 #### 检查是否支持导出权限
 
  > 报错信息如下：
@@ -18,7 +25,7 @@ SHOW VARIABLES LIKE "secure_file_priv";
 | -- | -- |
 | secure_file_pri | NULL |
 
-如果 Values 不为 `NULL`，*.my.conf* 尾部加入如下文本
+如果 `Values` 不为 `NULL`，*.my.conf* 尾部加入如下文本
 ```
 [mysqld_safe]
 [mysqld]
