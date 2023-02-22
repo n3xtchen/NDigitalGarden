@@ -73,6 +73,12 @@
   <script src="{{$callouts.Permalink}}"></script>
   {{ end }}
 
+  <!-- Mermaid by n3xtchen -->
+  {{ if $data.enableMermaid | default $.Site.Data.config.enableMermaid }}
+  {{ $mermaid := resources.Get "js/mermaid.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{$mermaid.Permalink}}"></script>
+  {{ end }}
+
   <!--  Preload page vars  -->
   {{$linkIndex := resources.Get "indices/linkIndex.json" | resources.Fingerprint
   "md5" | resources.Minify | }} {{$contentIndex := resources.Get
@@ -163,6 +169,12 @@
         throwOnError : false
       });
       {{end}}
+
+      // Mermaid by n3xtchen
+      {{if $data.enableMermaid | default $.Site.Data.config.enableMermaid}}
+      mermaid.initialize({ startOnLoad: true });
+      {{end}}
+
     };
   </script>
   {{if $data.enableSPA | default $.Site.Data.config.enableSPA}}

@@ -21,6 +21,9 @@ enableFooter: true
 
 enableContextualBacklinks: true
 
+# Mermaid by n3xtchen
+enableMermaid: true
+
 # 展示最近的更新的文档
 enableRecentNotes: true
 
