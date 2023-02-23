@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_index.md",
+                "file": "notes/2023-02-22-proxy.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_index.md",
+                "file": "notes/2023-02-22-proxy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_index.md",
+                "file": "notes/2023-02-22-proxy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_index.md"
+                "file": "notes/2023-02-22-proxy.md"
               }
             }
           }
@@ -150,11 +150,11 @@
   },
   "active": "21449df27b1f12a8",
   "lastOpenFiles": [
-    "notes/2023-02-22-proxy.md",
     "notes/2023-02-20-golang-project-struct.md",
+    "_index.md",
+    "notes/2023-02-22-proxy.md",
     "notes/2023-02-18-mysql-trick.md",
     "notes/2022-12-15-McCulloch-Pitts-Neurons.md",
-    "_index.md",
     "templates/post.md",
     "未命名.md",
     "notes/2023-02-17-SQL-window-function.md",

@@ -1,4 +1,4 @@
-aseURL = "http://n3xtchen.github.io/the-digital-garden"
+baseURL = "https://n3xtchen.github.io/NDigitalGarden"
 languageCode = "zh-CN"
 googleAnalytics = ""
 relativeURLs = false

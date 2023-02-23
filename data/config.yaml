@@ -30,7 +30,7 @@ enableRecentNotes: true
 # github 编辑
 enableGitHubEdit: true
 
-GitHubLink: https://github.com/n3xtchen/the-digital-garden
+GitHubLink: https://n3xtchen.github.io/NDigitalGarden/
 
 search:
   enableSemanticSearch: false
