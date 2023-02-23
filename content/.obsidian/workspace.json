@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/2023-02-22-proxy.md",
+                "file": "_index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/2023-02-22-proxy.md",
+                "file": "_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/2023-02-22-proxy.md",
+                "file": "_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/2023-02-22-proxy.md"
+                "file": "_index.md"
               }
             }
           }
@@ -139,9 +139,9 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "canvas:新建白板": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
-      "canvas:Create new canvas": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
@@ -150,8 +150,8 @@
   },
   "active": "21449df27b1f12a8",
   "lastOpenFiles": [
-    "notes/2023-02-20-golang-project-struct.md",
     "notes/2023-02-22-proxy.md",
+    "notes/2023-02-20-golang-project-struct.md",
     "notes/2023-02-18-mysql-trick.md",
     "notes/2022-12-15-McCulloch-Pitts-Neurons.md",
     "_index.md",
