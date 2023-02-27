@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/2023-02-24-xml-PCDATA-invalid-char.md",
+                "file": "notes/2023-02-24-sql-analytics-gbt.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/2023-02-24-xml-PCDATA-invalid-char.md",
+                "file": "notes/2023-02-24-sql-analytics-gbt.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/2023-02-24-xml-PCDATA-invalid-char.md",
+                "file": "notes/2023-02-24-sql-analytics-gbt.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/2023-02-24-xml-PCDATA-invalid-char.md"
+                "file": "notes/2023-02-24-sql-analytics-gbt.md"
               }
             }
           }
@@ -150,11 +150,12 @@
   },
   "active": "21449df27b1f12a8",
   "lastOpenFiles": [
-    "未命名.md",
-    "notes/2023-02-24-xml-PCDATA-invalid-char.md",
+    "2023-02-27-jupyter-multi-env.md",
     "notes/2023-02-24-sql-analytics-gbt.md",
     "notes/2023-02-24-diagram-software.md",
     "notes/2023-02-20-golang-project-struct.md",
+    "notes/2023-02-24-xml-PCDATA-invalid-char.md",
+    "未命名.md",
     "notes/2023-02-17-SQL-window-function.md",
     "notes/2023-02-18-mysql-trick.md",
     "notes/2023-02-22-proxy.md",
