@@ -15,14 +15,9 @@ tags:
 
 ### 看一下怎么安装？
 
-首先，在你的 base 环境[^1]中安装 `nb_conda_kernels`
+#### 安装被调用方的内核（ `ipykernel`）
 
-```bash
-conda install -c conda-forge jupyterlab
-conda install -c conda-forge nb_conda_kernels
-```
-
-接着，在需要切换的 **conda** 环境安装 ipykernel
+首先，我们在需要切换的 **conda** 环境安装 `ipykernel`，因为 **jupyter** 是通过它来识别和调用环境的
 
 ```bash
 conda activate {指定的环境}
@@ -31,6 +26,27 @@ conda deactivate
 ```
 
 安装完，刷新下 jupyter lab 页面[^2]就可以识别到新的环境了
+
+#### 让你的 base 环境识别到你已经安装好的内核（`ipykernel`）
+
+##### 方法一：nb_conda_kernels[推荐]
+
+在你的 base 环境[^1]中安装 `nb_conda_kernels`
+
+```bash
+conda activate base # base 可以替换成你系统中安装任意一个 env
+conda install -c conda-forge nb_conda_kernels
+```
+
+重启后，就能识别到系统安装了  `ipykernel` 的 **python** 虚拟环境
+
+##### 方法二：手动关联内核（`ipykernel`）
+
+```bash
+conda activate {指定的环境}
+ipython kernel install --user --name={指定的环境} # 当然和换成其他名字，但是最好和你的 env 关联
+conda deactivate
+```
 
 [^1]: 就是你启动 jupyter server 的conda env 环境
 [^2]: 安装后，不需要重启 jupyter lab
