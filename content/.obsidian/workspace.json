@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/2023-02-27-jupyter-multi-env.md",
+                "file": "notes/2023-02-20-golang-project-struct.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/2023-02-27-jupyter-multi-env.md",
+                "file": "notes/2023-02-20-golang-project-struct.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/2023-02-27-jupyter-multi-env.md",
+                "file": "notes/2023-02-20-golang-project-struct.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/2023-02-27-jupyter-multi-env.md"
+                "file": "notes/2023-02-20-golang-project-struct.md"
               }
             }
           }
@@ -150,8 +150,8 @@
   },
   "active": "21449df27b1f12a8",
   "lastOpenFiles": [
-    "notes/2023-02-24-sql-analytics-gbt.md",
     "notes/2023-02-27-jupyter-multi-env.md",
+    "notes/2023-02-24-sql-analytics-gbt.md",
     "notes/2023-02-24-diagram-software.md",
     "notes/2023-02-20-golang-project-struct.md",
     "notes/2023-02-24-xml-PCDATA-invalid-char.md",
