@@ -53,6 +53,9 @@ tags:
 
 `go.sum` 详细罗列了当前项目直接或间接依赖的所有模块版本，并写明了那些模块版本的 **SHA-256** 哈希值；主要作用是以备 **Golang** 在今后的操作中保证项目所依赖的那些模块版本==不会被篡改==。
 
+> [Go Modules 包管理工具的理解与使用_架构_尚新鹏_InfoQ精选文章](https://www.infoq.cn/article/xyjhjja87y7pvu1iwhz3)
+> [5分钟玩转go.sum - 掘金](https://juejin.cn/post/7158069082439286791)
+
 #### vendor
 
 ==非必要不用==
@@ -62,6 +65,8 @@ tags:
 #### 建议
 
 ==当您使用 go mod 和 vendor 时，最好只使用其中一种方法来管理您的依赖项，以避免潜在的版本冲突和依赖项错误。==
+
+> [go mod 和 go vendor 使用与区别 - 知乎](https://zhuanlan.zhihu.com/p/374044583)
 
 ### 硬约束：internal 目录
 
