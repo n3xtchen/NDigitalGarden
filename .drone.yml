@@ -19,5 +19,5 @@ steps:
     path: /drone/src/build
   commands:
   - hugo-obsidian -input=content -output=assets/indices -index -root=.
-  - hugo --minify -d build
+  - env HUGO_BASEURL=10.0.0.79 hugo --minify -d build
   - find build -name '*.html' | xargs -I {} sed -Ei  's/(^|[^=])==([^\=]+)==([^=]|$)/\1<mark>\2<\\/mark>\3/g' {}
