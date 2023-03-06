@@ -1,6 +1,6 @@
 ---
 title: "OpenAI API 使用说明"
-created: 2023-03-01 15:08
+date: 2023-03-01T15:08:00
 tags:
 - AI
 ---

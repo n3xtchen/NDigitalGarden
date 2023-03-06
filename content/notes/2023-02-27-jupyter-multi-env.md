@@ -1,6 +1,6 @@
 ---
 title: "Jupyter 如何自由切换 conda 虚拟环境"
-created: 2023-02-27 17:50
+date: 2023-02-27T17:50:00
 tags:
 - python
 ---

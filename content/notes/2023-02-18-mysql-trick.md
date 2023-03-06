@@ -1,6 +1,6 @@
 ---
 title: "MySQL 的小技巧"
-created: 2023-02-20 15:55
+date: 2023-02-20T15:55
 tags:
 - sql
 ---

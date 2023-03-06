@@ -1,6 +1,6 @@
 ---
 title: "Golang 项目目录结构规范的思考"
-created: 2023-02-20 16:35
+date: 2023-02-20T16:35:00
 tags:
 - Golang
 ---

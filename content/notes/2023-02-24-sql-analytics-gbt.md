@@ -1,6 +1,6 @@
 ---
 title: "使用 GPT 进行数据分析"
-created: 2023-02-24 15:54
+date: 2023-02-24T15:54:00
 tags:
 - AI
 - SQL
