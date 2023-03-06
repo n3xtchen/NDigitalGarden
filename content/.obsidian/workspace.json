@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/2023-02-16-SQL-basic.md",
+                "file": "notes/2023-02-18-mysql-trick.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/2023-02-16-SQL-basic.md",
+                "file": "notes/2023-02-18-mysql-trick.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/2023-02-16-SQL-basic.md",
+                "file": "notes/2023-02-18-mysql-trick.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/2023-02-16-SQL-basic.md"
+                "file": "notes/2023-02-18-mysql-trick.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "1fbcf15451a4e12e",
   "lastOpenFiles": [
+    "notes/2023-02-16-SQL-basic.md",
     "notes/2023-03-01-openai-api.md",
     "notes/2023-02-27-jupyter-multi-env.md",
     "notes/2023-02-24-xml-PCDATA-invalid-char.md",
@@ -158,7 +159,6 @@
     "notes/2023-02-20-golang-project-struct.md",
     "notes/2023-02-18-mysql-trick.md",
     "notes/2023-02-17-SQL-window-function.md",
-    "notes/2023-02-16-SQL-basic.md",
     "notes/2022-12-17-Neurons.md",
     "notes/2022-12-15-McCulloch-Pitts-Neurons.md",
     "templates/post.md",
