@@ -18,7 +18,7 @@ meta_data.create_all()  # 2.0 要求传入 engine 或者 connection
 meta_data.reflect()  # 2.0 要求传入 engine 或者 connection
 
 # 2.0 要求使用 autoload_with=engine 替代 autoload=True
-t = Table("t", meta_data, autoload=True)  
+t = Table("t",zz meta_data, autoload=True)  
 ```
 
 现在看看新版的用法：
