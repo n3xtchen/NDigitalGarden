@@ -19,8 +19,7 @@ tags:
   - pkg3/
 - pkg/          # 通用的应用程序代码，可以被外部引用
   - pkg1/
-- tests/        # 项目中的所有配置文件
-  - pkg1/ 
+- testdata/     # 测试数据，编译的时候会被忽略   
 - configs/      # 配置文件
 - scripts/      # 项目脚本
 - vendor/       # 第三方依赖
