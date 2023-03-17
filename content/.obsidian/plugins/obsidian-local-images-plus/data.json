@@ -3,13 +3,13 @@
   "useRelativePath": true,
   "mediaFolderSuff": "",
   "downUnknown": false,
-  "saveAtt": "nextToNoteS",
+  "saveAtt": "nextToNote",
   "realTimeUpdate": false,
   "filesizeLimit": 0,
   "realTimeUpdateInterval": 5,
   "addNameOfFile": true,
   "showNotifications": true,
   "include": ".*\\.md",
-  "mediaRootDirectory": "images",
+  "mediaRootDirectory": "notesimages",
   "useWikilinks": false
 }
