@@ -11,7 +11,6 @@ tags:
 
 ```json
 /* POST https://api.openai.com/v1/completions -d */
-/* POST https://api.openai.com/v1/chat/completions -d */
 {
 	"model": "text-davinci-003",
 	"prompt": "请告诉我如何编写一个工作汇报",
@@ -56,7 +55,7 @@ tags:
 **默认值**：1
 **取值范围**：0.0～2.0，值越大，随机性和创造力越高，准确率和连贯性越低。
 
-##### 核采样：`top_p`:
+##### 核采样：`top_p`
 
 温度采样的替代品，其中模型考虑了具有 `top_p` 概率质量的 **token** 的结果。
 
@@ -67,7 +66,7 @@ tags:
 
 ##### 使用建议
 
-==不推荐和 temperature 混用，取其一。==
+==不推荐 temperature 和 top_n 混用，取其一。==
 
 通常情况下，可以先尝试将 `temperature` 和 `top_n` 参数都设置为较小的值，以获得最基本的生成结果。如果生成的文本不够随机或多样化，可以逐步增大 `temperature` 参数的值或减小 `top_n` 参数的值；如果生成的文本不够准确或流畅，可以逐步减小 `temperature` 参数的值或增大 `top_n` 参数的值。
 
