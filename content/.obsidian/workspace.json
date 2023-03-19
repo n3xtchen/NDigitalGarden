@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/2023-03-01-openai-api.md",
+                "file": "notes/2023-02-24-sql-analytics-gbt.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/2023-03-01-openai-api.md",
+                "file": "notes/2023-02-24-sql-analytics-gbt.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/2023-03-01-openai-api.md",
+                "file": "notes/2023-02-24-sql-analytics-gbt.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/2023-03-01-openai-api.md"
+                "file": "notes/2023-02-24-sql-analytics-gbt.md"
               }
             }
           }
@@ -149,6 +149,8 @@
   },
   "active": "1fbcf15451a4e12e",
   "lastOpenFiles": [
+    "notes/2023-02-24-diagram-software.md",
+    "notes/2023-03-01-openai-api.md",
     "notes/2023-02-20-golang-project-struct.md",
     "notes/2023-02-22-proxy.md",
     "notes/2023-02-18-mysql-trick.md",
@@ -170,9 +172,7 @@
     "private/2023-03-16-css-box-model.md",
     "notes/未命名.md",
     "_index.md",
-    "notes/2023-03-01-openai-api.md",
     "notes/2023-03-08-sqlalchemy-2-metabase.md",
-    "notes/2023-02-24-diagram-software.md",
     "notes/2023-02-24-xml-PCDATA-invalid-char.md",
     "未命名.md",
     "notes/2023-02-27-jupyter-multi-env.md",

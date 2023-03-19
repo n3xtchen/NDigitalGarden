@@ -86,6 +86,195 @@ ORDER BY total_sales DESC
 
 ```
 
+#### 1. 过滤
+
+```
+现在你是一个资深的分析师，有着丰富分析经验和SQL能力，请你帮个忙
+
+Customer 的表结构如下：
+  id INTEGER COMMENT "主键"
+  name VARCHAR(50)
+  phone VARCHAR(15)
+  address VARCHAR(100)
+Customer 的样本数据如下：
+ id name       phone address
+  1   张三 13888888888 上海市浦东新区
+  2   李四 13999999999  北京市海淀区
+  3   王五 13666666666  广州市天河区
+  
+根据以上提供的数据结构和数据，编写一个具体和准确的 mysql 的查询语句来回答如下分析问题：
+
+"获取客户 A 的电话号码和住址"
+
+并使用你的逻辑来注释它。
+```
+
+**回答**：
+```sql
+SELECT phone, address 
+FROM Customer 
+WHERE name = 'A'
+```
+该查询语句会从 Customer 表中筛选出 name 等于 'A' 的记录，然后只返回这些记录中的 phone 和 address 字段，即客户 A 的电话号码和住址。
+
+#### 2. 聚合
+
+```
+现在你是一个资深的分析师，有着丰富分析经验和SQL能力，请你帮个忙
+
+Order 的表结构如下：
+  id INTEGER
+  order_no VARCHAR(50)
+  customer_id INTEGER
+  payment_id INTEGER
+  shipping_address_id INTEGER
+  order_status_id INTEGER
+  invoice_id INTEGER
+  created_at DATETIME
+  updated_at DATETIME    
+Order 的样本数据如下：
+ id    order_no  customer_id  payment_id  shipping_address_id  order_status_id  invoice_id          created_at          updated_at
+  1 20220601001            1           1                    1                2         2.0 2022-06-01 09:00:00 2022-06-02 10:00:00
+  2 20220601002            2           3                    2                1         NaN 2022-06-01 14:00:00 2022-06-02 16:00:00
+  3 20220602001            3           2                    3                3         1.0 2022-06-02 08:00:00                 NaT
+
+根据以上提供的数据结构和数据，编写一个具体和准确的 mysql 的查询语句来回答如下分析问题：
+
+"统计每个月的订单数"
+
+并使用你的逻辑来注释它。
+```
+
+**回答**：
+```sql
+SELECT 
+    DATE_FORMAT(created_at, '%Y-%m') AS month, 
+    COUNT(*) AS order_count
+FROM 
+    Order
+GROUP BY 
+    month;
+
+-- 将创建时间按年-月格式化，统计每个月的订单数，并按月份分组。
+```
+
+#### 3.  连表
+
+```
+现在你是一个资深的分析师，有着丰富分析经验和SQL能力，请你帮个忙
+
+Customer 的表结构如下：
+  id INTEGER COMMENT "主键"
+  name VARCHAR(50)
+  phone VARCHAR(15)
+  address VARCHAR(100)    
+Customer 的样本数据如下：
+ id name       phone address
+  1   张三 13888888888 上海市浦东新区
+  2   李四 13999999999  北京市海淀区
+  3   王五 13666666666  广州市天河区
+
+Order 的表结构如下：
+  id INTEGER
+  order_no VARCHAR(50)
+  customer_id INTEGER
+  payment_id INTEGER
+  shipping_address_id INTEGER
+  order_status_id INTEGER
+  invoice_id INTEGER
+  created_at DATETIME
+  updated_at DATETIME    
+Order 的样本数据如下：
+ id    order_no  customer_id  payment_id  shipping_address_id  order_status_id  invoice_id          created_at          updated_at
+  1 20220601001            1           1                    1                2         2.0 2022-06-01 09:00:00 2022-06-02 10:00:00
+  2 20220601002            2           3                    2                1         NaN 2022-06-01 14:00:00 2022-06-02 16:00:00
+  3 20220602001            3           2                    3                3         1.0 2022-06-02 08:00:00                 NaT
+
+根据以上提供的数据结构和数据，编写一个具体和准确的 mysql 的查询语句来回答如下分析问题：
+
+"获取本月的所有订单，需要显示客户名和单号"
+
+并使用你的逻辑来注释它。
+```
+
+**回答**：
+
+```sql
+SELECT c.name, o.order_no
+FROM Customer c
+INNER JOIN Order o
+ON c.id = o.customer_id
+WHERE MONTH(o.created_at) = MONTH(CURRENT_DATE()) 
+AND YEAR(o.created_at) = YEAR(CURRENT_DATE()); 
+
+-- 使用内连接将 Customer 表和 Order 表连接起来
+-- 在 WHERE 子句中筛选出本月的订单
+-- 最后只选出客户名和单号这两个需要显示的字段
+```
+
+#### 4. 连表聚合
+
+```
+现在你是一个资深的分析师，有着丰富分析经验和SQL能力，请你帮个忙
+
+Customer 的表结构如下：
+  id INTEGER COMMENT "主键"
+  name VARCHAR(50)
+  phone VARCHAR(15)
+  address VARCHAR(100)    
+Customer 的样本数据如下：
+ id name       phone address
+  1   张三 13888888888 上海市浦东新区
+  2   李四 13999999999  北京市海淀区
+  3   王五 13666666666  广州市天河区
+
+Order 的表结构如下：
+  id INTEGER
+  order_no VARCHAR(50)
+  customer_id INTEGER
+  payment_id INTEGER
+  shipping_address_id INTEGER
+  order_status_id INTEGER
+  invoice_id INTEGER
+  created_at DATETIME
+  updated_at DATETIME    
+Order 的样本数据如下：
+ id    order_no  customer_id  payment_id  shipping_address_id  order_status_id  invoice_id          created_at          updated_at
+  1 20220601001            1           1                    1                2         2.0 2022-06-01 09:00:00 2022-06-02 10:00:00
+  2 20220601002            2           3                    2                1         NaN 2022-06-01 14:00:00 2022-06-02 16:00:00
+  3 20220602001            3           2                    3                3         1.0 2022-06-02 08:00:00                 NaT
+
+根据以上提供的数据结构和数据，编写一个具体和准确的 mysql 的查询语句来回答如下分析问题：
+
+"统计每个月的手机号数量"
+
+并使用你的逻辑来注释它。
+```
+
+**回答**：
+```sql
+SELECT 
+    DATE_FORMAT(created_at, '%Y-%m') AS `month`, -- 提取订单创建时间的月份
+    COUNT(DISTINCT phone) AS phone_count -- 统计每月不同手机号的数量
+FROM 
+    Order o 
+    JOIN Customer c ON o.customer_id = c.id -- 关联订单和顾客表
+WHERE 
+    c.phone IS NOT NULL -- 排除手机号为空的顾客
+GROUP BY 
+    `month` -- 按月份分组
+ORDER BY 
+    `month` ASC; -- 按月份升序排列
+```
+
+逻辑解析：
+1. 通过JOIN操作关联订单表和顾客表，以获取订单所属顾客的手机号码信息。
+2. 使用DATE_FORMAT()函数提取订单创建时间的月份信息。
+3. 使用COUNT()函数和DISTINCT关键字统计每个月份下不同手机号的数量。
+4. 使用WHERE子句过滤出手机号不为空的顾客。
+5. 使用GROUP BY子句按月份对数据进行分组。
+6. 使用ORDER BY子句按月份升序排列结果。
+
 #### 2. 让 GPT 再次检查下生成的语句
 
 在使用 GPT 过程中，发现它和人一样不断犯相同的错误（和任何分析师一样），所以你需要就像提醒一个新手一样，给它一些明确的 prompt 来审查自己生成的每一个查询，并修改 bug：
