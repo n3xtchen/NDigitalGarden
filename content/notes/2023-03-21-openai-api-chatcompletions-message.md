@@ -1,6 +1,6 @@
 ---
-title: "openAI API：如何编写 message?"
-date: 2023-03-21T09:58:00
+title: "openAI API如何编写 message?"
+date: 2023-03-21T09:58:00+08:00
 tags:
 - AI
 ---
