@@ -1,6 +1,6 @@
 ---
 title: "openAI API如何编写 message?"
-date: 2023-03-21T09:58:00+08:00
+date: 2023-03-21T09:58:00+08:
 tags:
 - AI
 ---
@@ -71,4 +71,5 @@ Translate the following English text to French: "{text}"
 | n                 | Y                | Y                |
 | logprobs          | Y                | N                |
 
-> 具体参数说明见：[[openAI api - Text Completions |notes/2023-03-01-openai-api]]
+> 具体参数说明见：[[notes/2023-03-01-openai-api |openAI api - Text Completions]]
+
