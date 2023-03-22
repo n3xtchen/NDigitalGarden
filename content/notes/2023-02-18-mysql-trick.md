@@ -2,7 +2,7 @@
 title: "MySQL 的小技巧"
 date: 2023-02-20T15:55:00
 tags:
-- sql
+- SQL
 ---
 
 ### 文件导出

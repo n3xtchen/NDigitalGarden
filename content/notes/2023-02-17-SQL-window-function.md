@@ -2,7 +2,7 @@
 title: "SQL 窗口函数"
 date: 2023-02-17T19:27:00
 tags:
-- sql
+- SQL
 ---
 
 ```

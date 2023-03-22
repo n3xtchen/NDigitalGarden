@@ -34,6 +34,8 @@ tags:
 -   *vendor/* 包含项目的第三方依赖项
 -   *go.mod* 和 *go.sum* 是 **Go modules** 的配置文件
 
+> [golang 编程规范 - 项目目录结构 | MakeOptim](https://makeoptim.com/golang/standards/project-layout/#test)
+
 ### 包依赖机制
 
 ```
@@ -74,6 +76,8 @@ tags:
 - 不同项目之间：在 **Golang** 项目中，*internal* 目录通常用于存放不应该被外部包引用的代码，这些代码只能在项目内部使用。 
 - 同一个项目内：**Golang** 编译器在导入路径中看到带有 *internal* 的软件包的导入时，它将验证导入包的程序文件是否位于 *internal* 目录的父级目录，或父级目录的子目录中，否则会报错。
 	- 例子， *path/to/some/dir/internal/* 可以被 *path/to/some/dir/* 目录下所有代码引用
+
+> [I'll take pkg over internal](https://travisjeffery.com/b/2019/11/i-ll-take-pkg-over-internal/)
 
 ### 测试目录和文件
 

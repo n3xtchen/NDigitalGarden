@@ -112,3 +112,5 @@ main.go:3:8: "./pkg1" is relative, but relative import paths are not supported i
 ```
 
 
+
+[A beginners guide to Packages in Golang | CalliCoder](https://www.callicoder.com/golang-packages/)
