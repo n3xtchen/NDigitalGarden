@@ -6,3 +6,9 @@ Session.vim
 .netrwhist
 *~
 
+# huge auto generated
+.hugo_build.lock
+static/linkmap
+assets/indices/*.json
+resources
+

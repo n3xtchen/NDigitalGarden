@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/2023-03-10-gpt3-token.md",
+                "file": "notes/2023-03-21-css-layout-grid.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/2023-03-10-gpt3-token.md",
+                "file": "notes/2023-03-21-css-layout-grid.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/2023-03-10-gpt3-token.md",
+                "file": "notes/2023-03-21-css-layout-grid.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/2023-03-10-gpt3-token.md"
+                "file": "notes/2023-03-21-css-layout-grid.md"
               }
             }
           }
@@ -149,21 +149,21 @@
   },
   "active": "1974cf8ef2dbaa06",
   "lastOpenFiles": [
+    "notes/2023-03-16-css-layout-flex-box.md",
+    "notes/2023-03-21-css-layout-grid.md",
+    "notes/2023-03-21-openai-api-chatcompletions-message.md",
+    "2023-03-22-gpt-prompt.md",
+    "2023-03-22-go-config.md",
+    "notes/2023-03-10-gpt3-token.md",
     "notes/2023-02-24-sql-analytics-gbt.md",
     "notes/2023-02-24-xml-PCDATA-invalid-char.md",
     "notes/2023-02-20-golang-project-struct.md",
-    "notes/2023-03-21-css-layout-grid.md",
-    "notes/2023-03-16-css-layout-flex-box.md",
     "notes/2023-03-01-openai-api.md",
-    "notes/2023-03-10-gpt3-token.md",
-    "notes/2023-03-21-openai-api-chatcompletions-message.md",
     "notes/2023-03-16-css-layout.md",
     "notes/2023-02-24-diagram-software.md",
     "notes/2023-03-08-sqlalchemy-2-metabase.md",
     "notes/2023-03-13-golang-package.md",
     "sql-gpt.md",
-    "2023-03-22-gpt-prompt.md",
-    "2023-03-22-go-config.md",
     "notes/2023-02-27-jupyter-multi-env.md",
     "notes/2023-02-17-SQL-window-function.md",
     "notes/2023-02-18-mysql-trick.md",
