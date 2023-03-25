@@ -25,7 +25,7 @@ enableContextualBacklinks: true
 enableMermaid: true
 
 # 展示最近的更新的文档
-enableRecentNotes: true
+enableRecentNotes: false
 
 # github 编辑
 enableGitHubEdit: true

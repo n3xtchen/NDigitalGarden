@@ -2,7 +2,7 @@
 title: "Golang-包（Package）"
 date: 2023-03-13T23:54:00
 tags:
-- golang
+- Golang
 ---
 
 - 包必需由目录来承载

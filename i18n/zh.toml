@@ -1,0 +1,32 @@
+[all_notes]
+other = "所有的笔记"
+
+[last_updated]
+other = "上次更新于"
+
+[home]
+other = "主页"
+
+[edit_source]
+other = "编辑源文件"
+
+[interactive_graph]
+other = "笔记双向链"
+
+[backlinks]
+other = "反向链接"
+
+[no_backlinks]
+other = "未找到反向链接"
+
+[search]
+other = "Search"
+
+[search_for_something]
+other = "搜索你想要的..."
+
+[recent_notes]
+other = "最近的笔记"
+
+[toc]
+other = "目录"

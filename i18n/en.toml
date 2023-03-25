@@ -49,6 +49,9 @@ other = "Search Icon"
 [icon_search]
 other = "Icon to open search"
 
+[all_notes]
+other = "All Notes"
+
 [recent_notes]
 other = "Recent Notes"
 

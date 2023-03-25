@@ -1,5 +1,6 @@
 baseURL = "https://n3xtchen.github.io/NDigitalGarden"
 languageCode = "zh-CN"
+defaultContentLanguage = "zh"
 googleAnalytics = ""
 relativeURLs = false
 disablePathToLower = true
