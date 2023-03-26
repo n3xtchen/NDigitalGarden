@@ -129,7 +129,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -148,11 +149,11 @@
   },
   "active": "1974cf8ef2dbaa06",
   "lastOpenFiles": [
-    "2023-03-22-go-config.md",
     "notes/2023-03-21-css-layout-grid.md",
-    "notes/2023-03-25-css-layout-grid-using.md",
-    "notes/2023-03-16-css-layout-flex-box.md",
     "notes/2023-03-21-openai-api-chatcompletions-message.md",
+    "notes/2023-03-25-css-layout-grid-using.md",
+    "2023-03-22-go-config.md",
+    "notes/2023-03-16-css-layout-flex-box.md",
     "notes/2022-12-17-Neurons.md",
     "notes/2022-12-15-McCulloch-Pitts-Neurons.md",
     "notes/2023-03-01-openai-api.md",
