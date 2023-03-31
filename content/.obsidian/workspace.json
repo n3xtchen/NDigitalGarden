@@ -135,8 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -151,16 +150,16 @@
   },
   "active": "1974cf8ef2dbaa06",
   "lastOpenFiles": [
+    "notes/2023-03-21-openai-api-chatcompletions-message.md",
     "notes/2023-03-10-gpt3-token.md",
+    "notes/2023-03-01-openai-api.md",
+    "notes/2023-03-28-openai-api-finetuning.md",
     "notes/2023-02-27-jupyter-multi-env.md",
     "notes/2023-02-24-xml-PCDATA-invalid-char.md",
-    "notes/2023-03-28-openai-api-finetuning.md",
-    "notes/2023-03-01-openai-api.md",
     "未命名.md",
     "2023-03-22-go-config.md",
     "notes/2023-03-25-css-layout-grid-using.md",
     "notes/2023-03-21-css-layout-grid.md",
-    "notes/2023-03-21-openai-api-chatcompletions-message.md",
     "notes/2023-03-16-css-layout-flex-box.md",
     "notes/2022-12-17-Neurons.md",
     "notes/2022-12-15-McCulloch-Pitts-Neurons.md",

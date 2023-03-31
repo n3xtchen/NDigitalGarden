@@ -1,5 +1,5 @@
 ---
-title: "OpenAI API 使用说明"
+title: "OpenAI API: 文本补齐使用说明"
 date: 2023-03-01T15:08:00
 tags:
 - AI
