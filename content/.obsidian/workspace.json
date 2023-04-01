@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2f035b00f273ac1f",
+        "id": "95ecc28ad770535f",
         "type": "tabs",
         "children": [
           {
-            "id": "1974cf8ef2dbaa06",
+            "id": "8309e26190f94e54",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/2023-03-28-openai-api-finetuning.md",
+                "file": "notes/2023-04-01-openai-api-fintuning-using.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "b5b730e25fbb94c3",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/2023-03-28-openai-api-finetuning.md",
+                "file": "notes/2023-04-01-openai-api-fintuning-using.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/2023-03-28-openai-api-finetuning.md",
+                "file": "notes/2023-04-01-openai-api-fintuning-using.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/2023-03-28-openai-api-finetuning.md"
+                "file": "notes/2023-04-01-openai-api-fintuning-using.md"
               }
             }
           }
@@ -135,7 +134,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -148,12 +148,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1974cf8ef2dbaa06",
+  "active": "e0e94725ad525bed",
   "lastOpenFiles": [
+    "notes/2023-03-28-openai-api-finetuning.md",
+    "notes/2023-04-01-openai-api-fintuning-using.md",
     "notes/2023-03-21-openai-api-chatcompletions-message.md",
     "notes/2023-03-10-gpt3-token.md",
     "notes/2023-03-01-openai-api.md",
-    "notes/2023-03-28-openai-api-finetuning.md",
     "notes/2023-02-27-jupyter-multi-env.md",
     "notes/2023-02-24-xml-PCDATA-invalid-char.md",
     "未命名.md",
@@ -175,7 +176,6 @@
     "2023-03-22-gpt-prompt.md",
     "sql-gpt.md",
     "notes/2023-02-17-SQL-window-function.md",
-    "_index.md",
     "notes/images/47ea8697d5f17a3ba0dfa62e8830270c_MD5.svg",
     "notes/images/83eb9cdcbb680e1edee0c46014bad04b_MD5.png",
     "notes/images/05bb6a6bb72acb6123efaa4b5131871a_MD5.png",
