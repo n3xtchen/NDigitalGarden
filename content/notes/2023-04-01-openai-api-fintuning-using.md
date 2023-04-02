@@ -19,6 +19,8 @@ tags:
 openai -k <你的apikey> tools fine_tunes.prepare_data -f data.json -q
 ```
 
+它会自动将分析你的数据集，拆封成训练集（`_prepared_train` 后缀）和验证集（`_prepared_valid` 后缀）
+
 **输出**:
 
 ```text
@@ -48,4 +50,37 @@ Now use that file when fine-tuning:
 
 After you’ve fine-tuned a model, remember that your prompt has to end with the indicator string `\n\n###\n\n` for the model to start generating completions, rather than continuing with the prompt.
 Once your model starts training, it'll approximately take 3.13 hours to train a `curie` model, and less for `ada` and `babbage`. Queue will approximately take half an hour per job ahead of you.
+```
+
+### 3. 开始进行微调模式
+
+```bash
+openai api fine_tunes.create \
+	-t "data_prepared_train.jsonl" 
+	-v "data_prepared_valid.jsonl" 
+	--compute_classification_metrics --classification_n_classes {分类数} 
+```
+
+
+```text
+Upload progress: 100%|███████████████████████| 509k/509k [00:00<00:00, 403Mit/s]
+Uploaded file from data_prepared_train.jsonl: file-ZORlJyH7tHZX7T4nSTcZsSkm
+Upload progress: 100%|████████████████████| 75.4k/75.4k [00:00<00:00, 58.3Mit/s]
+Uploaded file from data_prepared_valid.jsonl: file-bGVC1Rhuu9i059NOtctNB4R9
+Created fine-tune: ft-HnegTA8pgKKWxVKopDss0Z7G
+Streaming events until fine-tuning is complete...
+
+(Ctrl-C will interrupt the stream, but not cancel the fine-tune)
+[2023-03-31 23:06:07] Created fine-tune: ft-HnegTA8pgKKWxVKopDss0Z7G
+
+Stream interrupted (client disconnected).
+To resume the stream, run:
+
+  openai api fine_tunes.follow -i ft-HnegTA8pgKKWxVKopDss0Z7G
+```
+
+#### 如果输出中断，可以使用下面命令继续：
+
+```bash
+openai -k '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' api fine_tunes.follow -i ft-HnegTA8pgKKWxVKopDss0Z7G
 ```
