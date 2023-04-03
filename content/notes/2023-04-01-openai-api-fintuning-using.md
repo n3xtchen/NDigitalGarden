@@ -61,7 +61,6 @@ openai api fine_tunes.create \
 	--compute_classification_metrics --classification_n_classes {分类数} 
 ```
 
-
 ```text
 Upload progress: 100%|███████████████████████| 509k/509k [00:00<00:00, 403Mit/s]
 Uploaded file from data_prepared_train.jsonl: file-ZORlJyH7tHZX7T4nSTcZsSkm
@@ -82,5 +81,22 @@ To resume the stream, run:
 #### 如果输出中断，可以使用下面命令继续：
 
 ```bash
-openai -k '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' api fine_tunes.follow -i ft-HnegTA8pgKKWxVKopDss0Z7G
+openai api fine_tunes.follow -i ft-HnegTA8pgKKWxVKopDss0Z7G
+```
+
+```text
+[2023-04-03 19:27:39] Created fine-tune: ft-pTUpDsM7AlHkALMgSpeQxdD2
+[2023-04-03 19:32:44] Fine-tune costs $2.41
+[2023-04-03 19:32:44] Fine-tune enqueued. Queue number: 0
+[2023-04-03 19:32:45] Fine-tune started
+[2023-04-03 19:40:52] Completed epoch 1/4
+[2023-04-03 19:55:40] Completed epoch 3/4
+[2023-04-03 20:03:47] Uploaded model: curie:ft-personal-2023-04-03-12-03-46
+[2023-04-03 20:03:48] Uploaded result file: file-obQbEb3RxT4Xz3T9rg1V5IgY
+[2023-04-03 20:03:48] Fine-tune succeeded
+
+Job complete! Status: succeeded 🎉
+Try out your fine-tuned model:
+
+openai api completions.create -m curie:ft-personal-2023-04-03-12-03-46 -p <YOUR_PROMPT>
 ```

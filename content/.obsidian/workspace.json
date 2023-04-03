@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "29b71bd568fd9dac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/2023-04-01-openai-api-fintuning-using.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -148,16 +161,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e0e94725ad525bed",
+  "active": "29b71bd568fd9dac",
   "lastOpenFiles": [
-    "notes/2023-03-28-openai-api-finetuning.md",
+    "cloudflare.md",
     "notes/2023-04-01-openai-api-fintuning-using.md",
+    "notes/2023-03-28-openai-api-finetuning.md",
     "notes/2023-03-21-openai-api-chatcompletions-message.md",
     "notes/2023-03-10-gpt3-token.md",
     "notes/2023-03-01-openai-api.md",
     "notes/2023-02-27-jupyter-multi-env.md",
     "notes/2023-02-24-xml-PCDATA-invalid-char.md",
-    "未命名.md",
     "2023-03-22-go-config.md",
     "notes/2023-03-25-css-layout-grid-using.md",
     "notes/2023-03-21-css-layout-grid.md",
