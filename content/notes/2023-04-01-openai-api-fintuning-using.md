@@ -100,3 +100,29 @@ Try out your fine-tuned model:
 
 openai api completions.create -m curie:ft-personal-2023-04-03-12-03-46 -p <YOUR_PROMPT>
 ```
+
+### 3. 现在验证集数据，并分析
+
+```bash
+openai api fine_tunes.results -i ft-pTUpDsM7AlHkALMgSpeQxdD2 > result.csv
+```
+
+### 数据可视化
+
+```python
+import plotly.graph_objs as go
+import plotly.io as pio
+import pandas as pd
+
+results = pd.read_csv('result.csv')
+results[results['classification/accuracy'].notnull()].tail(1)
+roc = results[results['classification/accuracy'].notnull()]['classification/accuracy'] #.plot()
+# 创建柱形图
+fig_roc = go.Figure(data=[go.Line(x=roc.index, y=roc)])
+
+# 设置布局和样式
+fig_roc.update_layout(title='Bar chart', xaxis_title='X-axis label', yaxis_title='Y-axis label')
+
+# 显示图形
+pio.show(fig_roc)
+```
