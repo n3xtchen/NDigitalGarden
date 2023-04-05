@@ -12,8 +12,10 @@ tags:
 {"prompt": "<训练的提示><提示结束词，作为和补齐的区分>", "completion": "<要补齐的分类或者描述><补齐结束词，避免补齐扩散>"}
 ```
 
-
 ### 2. 训练集和测试集拆分，并提供优化建议，以及下一步的命令
+
+- 所有提示都以 `\n\n###\n\n` 为结尾；
+- 所有的补齐都以空白字符开头(` `)。由于我们使用的分词方式，这样做能够产生更好的结果。
 
 ```
 openai -k <你的apikey> tools fine_tunes.prepare_data -f data.json -q
@@ -107,7 +109,7 @@ openai api completions.create -m curie:ft-personal-2023-04-03-12-03-46 -p <YOUR_
 openai api fine_tunes.results -i ft-pTUpDsM7AlHkALMgSpeQxdD2 > result.csv
 ```
 
-### 数据可视化
+#### 数据可视化
 
 ```python
 import plotly.graph_objs as go
