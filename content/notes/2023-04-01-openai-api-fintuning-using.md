@@ -5,20 +5,57 @@ tags:
 - AI
 ---
 
+通过 [[notes/2023-03-28-openai-api-finetuning|OpenAI API：微调（fine-tuning）及其使用场景]] 对 Fine-Tuning 的介绍，我们可以了解常见场景以及相关场景的使用 Trick。总的来说，微调的好处就是 ==更省钱，答案更明确==。接下来，我就来介绍下具体的工程实现细节，主要分成四个步骤来写：
 
-### 1. 准备数据，如下是数据结构
+1. 数据预测处理
+2. 模型训练
+3. 模型评估
+
+**开始之前，需要如下准备**：
+
+- 安装 **OpenAI** 的命令行工具：`pip install --upgrade openai`
+- 设置你的**API KEY**：`export OPENAI_API_KEY="<OPENAI_API_KEY>"`
+	- 可以从这个地方获取： https://platform.openai.com/account/api-keys
+	- 注册 OpenAI 账号的时候，会免费赠送 18 刀的额度。==注意，它是有使用期限的！==
+
+### 1. 数据预处理
+
+#### 数据格式
+
+**训练集的格式**：
 
 ```json
-{"prompt": "<训练的提示><提示结束词，作为和补齐的区分>", "completion": "<要补齐的分类或者描述><补齐结束词，避免补齐扩散>"}
+{
+  "prompt": "<训练的提示><分隔符>",
+  "completion": " <要补齐的分类或者描述><停止词>"
+}
 ```
 
-### 2. 训练集和测试集拆分，并提供优化建议，以及下一步的命令
+**模型调用的方式**：
 
-- 所有提示都以 `\n\n###\n\n` 为结尾；
-- 所有的补齐都以空白字符开头(` `)。由于我们使用的分词方式，这样做能够产生更好的结果。
-
+```json
+/* POST https://api.openai.com/v1/completions -d */
+{
+	"model": "<你训练好的模型名称>",
+	"prompt": "<你测试的提示><分隔符: 和训练集的格式中的分隔符一致>",
+	"stop": ["<停止词: 和训练集的格式中的停止词一致>"]
+	... /* 其他可选参数 */
+}
 ```
-openai -k <你的apikey> tools fine_tunes.prepare_data -f data.json -q
+
+
+- 每一个**提示**都应该以相同的**分隔符**结尾，来告诉模型==提示结束，开始补齐==，注意这个**分隔符**不能出现在**提示**和**补齐**中；
+- 每一个**补齐**都应该以空白字符开头(` `)，因为GPT的**标注器**标注大部分**分词**都以空白打头；
+- 每一个**补齐**都应该以相同的**停止词**结尾，来告诉模型==补齐结束==；
+- **推理**的时候，**提示**的格式应该要==和训练集的格式构建方式相同==：
+	- **提示**的文本结构和训练集的**提示**一致；
+	- **提示**要以相同的**分隔符**结束；
+	- 将 `stop` 参数和训练集的**补齐**的**停止词** 设置成一样的；
+
+#### 训练集和测试集拆分，并提供优化建议，以及下一步的命令
+
+```bash
+openai tools fine_tunes.prepare_data -f data.json -q
 ```
 
 它会自动将分析你的数据集，拆封成训练集（`_prepared_train` 后缀）和验证集（`_prepared_valid` 后缀）
@@ -54,7 +91,7 @@ After you’ve fine-tuned a model, remember that your prompt has to end with the
 Once your model starts training, it'll approximately take 3.13 hours to train a `curie` model, and less for `ada` and `babbage`. Queue will approximately take half an hour per job ahead of you.
 ```
 
-### 3. 开始进行微调模式
+### 2. 微调模型的训练
 
 ```bash
 openai api fine_tunes.create \
@@ -103,7 +140,7 @@ Try out your fine-tuned model:
 openai api completions.create -m curie:ft-personal-2023-04-03-12-03-46 -p <YOUR_PROMPT>
 ```
 
-### 3. 现在验证集数据，并分析
+### 3.  微信模型的评估
 
 ```bash
 openai api fine_tunes.results -i ft-pTUpDsM7AlHkALMgSpeQxdD2 > result.csv
