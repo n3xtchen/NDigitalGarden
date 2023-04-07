@@ -93,11 +93,43 @@ Once your model starts training, it'll approximately take 3.13 hours to train a 
 
 ### 2. 微调模型的训练
 
+**参数说明**：
+- `-t <训练集路径>`：必填
+- `-v <验证集路径>`：必填
+-  `-m/--model <模型名称>`：
+	- 设置基模型（base_model）
+	- 默认值是 `curie`，可选的有 `ada`、`babbage` 和 `davinci`
+- `--suffix <版本前缀>`: 
+	- 如果设置，训练完的模型名称为：`{base_model}:ft-{组织名称}:{版本前缀}-{timestamp}`
+	- 如果没有配置，模型名称为：`{base_model}:ft-{组织名称}-{timestamp}
+
+**模型的超参数**：
+- `--classification_n_classes <分类数量>`: 必填
+- `--n_epochs <训练轮数>`: 默认值是 4
+- `--batch <每批的数量>`: 
+	- 默认值是训练样本数量的 0.2%，上限为 256；
+	- ==数据集越大，想要得到更好的效果就需要设置更大的每批数量；==
+- `--learning_rate_multiplier <学习率倍数>`:
+	- $微调模型的学习率 = 预训练模型的学习率 \times 学习率倍数$
+	- 默认值是 0.05、0.1 或者 0.2，这个值取决于每批数量；
+	- ==建议范围在 0.02 和 0.2 之间会产生最佳的效果，每批数量越大，该值应该设置的更大来获取更好的效果==；
+- `--prompt_loss_weight <loss 权重>`:
+- `--classification_betas <> [<>]`:
+	## - 使用场景：二分类
+
+**模型的评估参数**：
+- `--compute_classification_metrics`: 
+	- 如果设置，会在每个 `epoch` 训练结束后，计算验证集的分类性能指标，如**准确率**和**F1-分数
+- `--calssifiction_positive_class <正样本数量>`:
+	- 使用场景：二分类
+	- 想要计算分类性能指标的时候，就需要设置
+
 ```bash
 openai api fine_tunes.create \
-	-t "data_prepared_train.jsonl" 
-	-v "data_prepared_valid.jsonl" 
-	--compute_classification_metrics --classification_n_classes {分类数} 
+	-t "data_prepared_train.jsonl" \
+	-v "data_prepared_valid.jsonl" \
+	--compute_classification_metrics \
+	--classification_n_classes <分类数> 
 ```
 
 ```text
@@ -110,14 +142,22 @@ Streaming events until fine-tuning is complete...
 
 (Ctrl-C will interrupt the stream, but not cancel the fine-tune)
 [2023-03-31 23:06:07] Created fine-tune: ft-HnegTA8pgKKWxVKopDss0Z7G
+[2023-04-03 19:32:44] Fine-tune costs $2.41
+[2023-04-03 19:32:44] Fine-tune enqueued. Queue number: 0
+[2023-04-03 19:32:45] Fine-tune started
+[2023-04-03 19:40:52] Completed epoch 1/4
+[2023-04-03 19:55:40] Completed epoch 3/4
+[2023-04-03 20:03:47] Uploaded model: curie:ft-personal-2023-04-03-12-03-46
+[2023-04-03 20:03:48] Uploaded result file: file-obQbEb3RxT4Xz3T9rg1V5IgY
+[2023-04-03 20:03:48] Fine-tune succeeded
 
-Stream interrupted (client disconnected).
-To resume the stream, run:
+Job complete! Status: succeeded 🎉
+Try out your fine-tuned model:
 
-  openai api fine_tunes.follow -i ft-HnegTA8pgKKWxVKopDss0Z7G
+openai api completions.create -m curie:ft-personal-2023-04-03-12-03-46 -p <YOUR_PROMPT>
 ```
 
-#### 如果输出中断，可以使用下面命令继续：
+由于训练时间通常都很长（我的这个命令执行了1个半小时），所以没有必要一直开着终端；你可以关闭终端，想要查看进度的时候，使用如下命令：
 
 ```bash
 openai api fine_tunes.follow -i ft-HnegTA8pgKKWxVKopDss0Z7G

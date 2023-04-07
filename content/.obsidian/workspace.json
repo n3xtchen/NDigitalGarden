@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/2023-03-28-openai-api-finetuning.md",
+                "file": "notes/2023-04-01-openai-api-fintuning-using.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/2023-03-28-openai-api-finetuning.md",
+                "file": "notes/2023-04-01-openai-api-fintuning-using.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/2023-03-28-openai-api-finetuning.md",
+                "file": "notes/2023-04-01-openai-api-fintuning-using.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/2023-03-28-openai-api-finetuning.md"
+                "file": "notes/2023-04-01-openai-api-fintuning-using.md"
               }
             }
           }
@@ -150,9 +150,9 @@
   },
   "active": "266f390f094b714b",
   "lastOpenFiles": [
+    "notes/2023-03-28-openai-api-finetuning.md",
     "notes/2023-04-01-openai-api-fintuning-using.md",
     "notes/2023-03-01-openai-api.md",
-    "notes/2023-03-28-openai-api-finetuning.md",
     "fleet_notes/2023-03-22-go-config.md",
     "fleet_notes/2023-04-06-devops-cicd.md",
     "fleet_notes",
