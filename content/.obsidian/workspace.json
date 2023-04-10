@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/2023-04-01-openai-api-fintuning-using.md",
+                "file": "notes/2023-04-10-fewshot-learning.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/2023-04-01-openai-api-fintuning-using.md",
+                "file": "notes/2023-04-10-fewshot-learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/2023-04-01-openai-api-fintuning-using.md",
+                "file": "notes/2023-04-10-fewshot-learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/2023-04-01-openai-api-fintuning-using.md"
+                "file": "notes/2023-04-10-fewshot-learning.md"
               }
             }
           }
@@ -148,17 +148,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "266f390f094b714b",
+  "active": "e0e94725ad525bed",
   "lastOpenFiles": [
-    "notes/2023-03-28-openai-api-finetuning.md",
+    "未命名.md",
+    "notes/2023-04-10-fewshot-learning.md",
     "notes/2023-04-01-openai-api-fintuning-using.md",
+    "notes/2023-03-28-openai-api-finetuning.md",
     "notes/2023-03-01-openai-api.md",
     "fleet_notes/2023-03-22-go-config.md",
     "fleet_notes/2023-04-06-devops-cicd.md",
     "fleet_notes",
     "fleet_notes/2023-04-06-cgroup-pi.md",
     "fleet_notes/2023-04-06-orbstack.md",
-    "未命名.md",
     "notes/2023-03-10-gpt3-token.md",
     "fleet_notes/cloudflare.md",
     "notes/2023-03-21-openai-api-chatcompletions-message.md",
