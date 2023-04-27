@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "266f390f094b714b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/2023-04-12-pytorch-tranformers-conda-setup.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e7695ecad4adcabe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名.md",
+                "file": "notes/2023-04-27-AI-intro-Normalization.md",
                 "mode": "source",
                 "source": false
               }
@@ -76,6 +64,18 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "be6e55656db16a3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fleet_notes/2023-03-22-go-config.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/2023-04-12-pytorch-tranformers-conda-setup.md",
+                "file": "notes/2023-04-27-AI-intro-Normalization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/2023-04-12-pytorch-tranformers-conda-setup.md",
+                "file": "notes/2023-04-27-AI-intro-Normalization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/2023-04-12-pytorch-tranformers-conda-setup.md"
+                "file": "notes/2023-04-27-AI-intro-Normalization.md"
               }
             }
           }
@@ -146,7 +146,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,39 +162,44 @@
   },
   "active": "e0e94725ad525bed",
   "lastOpenFiles": [
-    "未命名.md",
-    "notes/2023-04-12-pytorch-tranformers-conda-setup.md",
-    "_index.md",
-    "notes/2023-04-01-openai-api-fintuning-using.md",
-    "notes/2023-04-10-fewshot-learning.md",
-    "notes/2023-02-27-jupyter-multi-env.md",
-    "notes/2023-03-01-openai-api.md",
-    "notes/2023-03-08-sqlalchemy-2-metabase.md",
-    "notes/2023-03-13-golang-package.md",
-    "notes/2023-03-21-css-layout-grid.md",
-    "notes/2023-03-21-openai-api-chatcompletions-message.md",
-    "notes/2023-03-28-openai-api-finetuning.md",
-    "notes/2023-03-25-css-layout-grid-using.md",
-    "notes/2023-03-16-css-layout.md",
-    "fleet_notes/2023-03-22-go-config.md",
-    "fleet_notes/2023-04-06-devops-cicd.md",
-    "fleet_notes",
-    "fleet_notes/2023-04-06-cgroup-pi.md",
-    "fleet_notes/2023-04-06-orbstack.md",
-    "notes/2023-03-10-gpt3-token.md",
-    "fleet_notes/cloudflare.md",
-    "notes/2023-02-24-xml-PCDATA-invalid-char.md",
-    "notes/2023-03-16-css-layout-flex-box.md",
+    "notes/2023-02-17-SQL-window-function.md",
+    "notes/2023-02-16-SQL-basic.md",
     "notes/2022-12-17-Neurons.md",
     "notes/2022-12-15-McCulloch-Pitts-Neurons.md",
-    "notes/2023-02-24-sql-analytics-gbt.md",
-    "notes/2023-02-22-proxy.md",
+    "fleet_notes/2023-03-22-gpt-prompt.md",
+    "fleet_notes/2023-03-22-go-config.md",
+    "fleet_notes/2023-04-25-autogpt.md",
+    "fleet_notes/2023-04-23-segment-fb.md",
+    "fleet_notes/2023-04-06-orbstack.md",
+    "fleet_notes/2023-04-06-cgroup-pi.md",
+    "fleet_notes/2023-04-20-torch.md",
+    "notes/2023-04-27-AI-intro-Normalization.md",
+    "未命名.md",
+    "fleet_notes/2023-04-14-gpt-model.md",
+    "fleet_notes/2023-04-15-vim-ide.md",
+    "fleet_notes/2023-04-24-vim-map.md",
+    "fleet_notes/2023-04-20-mysql-性能优化.md",
+    "未命名 1.md",
+    "fleet_notes/images/WeChatWorkScreenshot_96c9f961-fc1f-494a-8fe3-104b11d1a1a2.png",
+    "fleet_notes/images",
+    "fleet_notes/cloudflare.md",
+    "fleet_notes/images/WeChatWorkScreenshot_019677bb-b683-4e74-85e6-36717feabc93.png",
+    "fleet_notes/images/企业微信截图_4b67f535-5387-46e9-b71f-64d23d285ef3.png",
+    "fleet_notes/images/企业微信截图_f21104a2-3a0b-455e-bf9f-bc162949773b.png",
+    "fleet_notes/images/企业微信截图_f50a0774-60dd-410a-a212-a3ffc9f2d617.png",
+    "notes/2023-04-12-pytorch-tranformers-conda-setup.md",
+    "notes/2023-04-01-openai-api-fintuning-using.md",
+    "fleet_notes/2023-04-06-devops-cicd.md",
+    "fleet_notes/sql-gpt.md",
+    "_index.md",
+    "notes/2023-02-27-jupyter-multi-env.md",
+    "notes/2023-04-10-fewshot-learning.md",
+    "fleet_notes",
     "notes/images/47ea8697d5f17a3ba0dfa62e8830270c_MD5.svg",
     "notes/images/83eb9cdcbb680e1edee0c46014bad04b_MD5.png",
     "notes/images/05bb6a6bb72acb6123efaa4b5131871a_MD5.png",
     "notes/images/neurons-bucket.svg",
     "notes/images/0e1b7cdfd388cb7140942680d4f91f9f_MD5.png",
-    "images",
-    "Pasted image 20230317002629.png"
+    "images"
   ]
 }

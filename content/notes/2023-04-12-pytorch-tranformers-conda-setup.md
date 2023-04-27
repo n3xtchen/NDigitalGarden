@@ -184,6 +184,17 @@ classifier('We are very happy to introduce pipeline to the transformers reposito
 [{'label': 'POSITIVE', 'score': 0.9996980428695679}]
 ```
 
+### 5.  安装常见组件
+
+```
+$ pip install pandas
+
+Requirement already satisfied: numpy>=1.21.0 in /opt/miniconda3/envs/ai_pytorch/lib/python3.11/site-packages (from pandas) (1.24.2)
+Requirement already satisfied: six>=1.5 in /opt/miniconda3/envs/ai_pytorch/lib/python3.11/site-packages (from python-dateutil>=2.8.2->pandas) (1.16.0)
+Installing collected packages: pytz, tzdata, pandas
+Successfully installed pandas-2.0.0 pytz-2023.3 tzdata-2023.3
+```
+
 ### 附录：最终的 Python Package 及版本
 
 ```
@@ -232,3 +243,6 @@ zlib                      1.2.13               h5a0b063_0    defaults
 [2]: [MPS backend — PyTorch master documentation](https://pytorch.org/docs/master/notes/mps.html)
 [3]: [Start Locally | PyTorch](https://pytorch.org/get-started/locally/#mac-verification)
 [4]: [huggingface/transformers: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX.](https://github.com/huggingface/transformers/#quick-tour)
+
+
+
