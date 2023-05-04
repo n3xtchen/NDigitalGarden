@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-05-01-promethues-指标采集格式.md",
+                "file": "notes/2023-04-01-openai-api-fintuning-using.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-05-01-promethues-指标采集格式.md",
+                "file": "notes/2023-04-01-openai-api-fintuning-using.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-05-01-promethues-指标采集格式.md",
+                "file": "notes/2023-04-01-openai-api-fintuning-using.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-05-01-promethues-指标采集格式.md"
+                "file": "notes/2023-04-01-openai-api-fintuning-using.md"
               }
             }
           }
@@ -183,8 +183,10 @@
   },
   "active": "d56f90194eebfa15",
   "lastOpenFiles": [
-    "2023-04-30-node-exporter.md",
+    "notes/2023-03-28-openai-api-finetuning.md",
+    "notes/2023-04-01-openai-api-fintuning-using.md",
     "2023-05-01-promethues-指标采集格式.md",
+    "2023-04-30-node-exporter.md",
     "_index.md",
     "notes/2023-04-27-AI-intro-Normalization.md",
     "notes/2023-02-17-SQL-window-function.md",
@@ -212,9 +214,7 @@
     "fleet_notes/images/企业微信截图_f21104a2-3a0b-455e-bf9f-bc162949773b.png",
     "fleet_notes/images/企业微信截图_f50a0774-60dd-410a-a212-a3ffc9f2d617.png",
     "notes/2023-04-12-pytorch-tranformers-conda-setup.md",
-    "notes/2023-04-01-openai-api-fintuning-using.md",
     "fleet_notes/2023-04-06-devops-cicd.md",
-    "fleet_notes/sql-gpt.md",
     "fleet_notes",
     "notes/images/47ea8697d5f17a3ba0dfa62e8830270c_MD5.svg",
     "notes/images/83eb9cdcbb680e1edee0c46014bad04b_MD5.png",

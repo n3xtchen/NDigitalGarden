@@ -1,5 +1,5 @@
 ---
-title: "OpenAI API：微调（fine-tuning）的使用
+title: "OpenAI API：微调（fine-tuning）的使用"
 date: 2023-04-01T23:30:00+08:00
 tags:
 - AI
