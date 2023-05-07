@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-05-01-promethues-指标采集格式.md",
+                "file": "notes/2023-05-04-autogpt-prompt.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/2023-04-01-openai-api-fintuning-using.md",
+                "file": "fleet_notes/2023-05-06-kafka-0-lost.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/2023-04-01-openai-api-fintuning-using.md",
+                "file": "notes/2023-05-04-autogpt-prompt.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/2023-04-01-openai-api-fintuning-using.md",
+                "file": "notes/2023-05-04-autogpt-prompt.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/2023-04-01-openai-api-fintuning-using.md"
+                "file": "notes/2023-05-04-autogpt-prompt.md"
               }
             }
           }
@@ -181,12 +180,23 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d56f90194eebfa15",
+  "active": "e7695ecad4adcabe",
   "lastOpenFiles": [
-    "notes/2023-03-28-openai-api-finetuning.md",
+    "fleet_notes/2023-04-25-autogpt.md",
+    "notes/2023-05-04-autogpt-prompt.md",
+    "fleet_notes/2023-05-04-docker-compose-dynamic-config.md",
+    "fleet_notes/2023-05-06-kafka-0-lost.md",
+    "fleet_notes/2023-05-01-promethues-指标采集格式.md",
+    "未命名.md",
+    "fleet_notes/2023-05-04-bert.md",
+    "fleet_notes/2023-04-15-vim-ide.md",
+    "fleet_notes/2023-04-20-torch.md",
+    "fleet_notes/2023-04-23-segment-fb.md",
+    "fleet_notes/2023-04-24-vim-map.md",
+    "fleet_notes/cloudflare.md",
     "notes/2023-04-01-openai-api-fintuning-using.md",
-    "2023-05-01-promethues-指标采集格式.md",
-    "2023-04-30-node-exporter.md",
+    "notes/2023-03-28-openai-api-finetuning.md",
+    "fleet_notes/2023-04-30-node-exporter.md",
     "_index.md",
     "notes/2023-04-27-AI-intro-Normalization.md",
     "notes/2023-02-17-SQL-window-function.md",
@@ -195,26 +205,15 @@
     "notes/2022-12-15-McCulloch-Pitts-Neurons.md",
     "fleet_notes/2023-03-22-gpt-prompt.md",
     "fleet_notes/2023-03-22-go-config.md",
-    "fleet_notes/2023-04-25-autogpt.md",
-    "fleet_notes/2023-04-23-segment-fb.md",
     "fleet_notes/2023-04-06-orbstack.md",
     "fleet_notes/2023-04-06-cgroup-pi.md",
-    "fleet_notes/2023-04-20-torch.md",
-    "未命名.md",
     "fleet_notes/2023-04-14-gpt-model.md",
-    "fleet_notes/2023-04-15-vim-ide.md",
-    "fleet_notes/2023-04-24-vim-map.md",
-    "fleet_notes/2023-04-20-mysql-性能优化.md",
-    "未命名 1.md",
     "fleet_notes/images/WeChatWorkScreenshot_96c9f961-fc1f-494a-8fe3-104b11d1a1a2.png",
     "fleet_notes/images",
-    "fleet_notes/cloudflare.md",
     "fleet_notes/images/WeChatWorkScreenshot_019677bb-b683-4e74-85e6-36717feabc93.png",
     "fleet_notes/images/企业微信截图_4b67f535-5387-46e9-b71f-64d23d285ef3.png",
     "fleet_notes/images/企业微信截图_f21104a2-3a0b-455e-bf9f-bc162949773b.png",
     "fleet_notes/images/企业微信截图_f50a0774-60dd-410a-a212-a3ffc9f2d617.png",
-    "notes/2023-04-12-pytorch-tranformers-conda-setup.md",
-    "fleet_notes/2023-04-06-devops-cicd.md",
     "fleet_notes",
     "notes/images/47ea8697d5f17a3ba0dfa62e8830270c_MD5.svg",
     "notes/images/83eb9cdcbb680e1edee0c46014bad04b_MD5.png",
