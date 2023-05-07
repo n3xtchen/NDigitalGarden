@@ -5,16 +5,49 @@ tags:
 - AI
 ---
 
+### prompt 交互的相关代码
+
+- autogpt/
+	- config/
+		- ai_config.py
+			- 读取/设置
+				- 名称
+				- 角色
+				- 目标
+			- 识别运行系统
+	- prompts/
+		- prompt.py
+			- 读取：
+				- 限制条件（Constraints）
+				- 资源（Resources）
+				- 绩效评估（Performance Evaluation）
+		- generator.py
+			- 读取：
+				- 响应格式
+			- 组装：限制条件/资源/绩效评估/响应格式
+	- app.py
+		- 命令（Commands）- agent 实现
+	- commands/
+		- \*.py
+			- 命令（Commands）- 实现
+	- agent/
+		- agent.py
+			- 主控逻辑
+				- 和 openAI 交互
+				- 执行命令
+	- llm/
+		- chat.py
+			-  openAI 交互 - 实现
+
+
 ## 初始 Prompt
 
-**名称**:  角色名
-**角色**:  对要扮演角色的详细描述
-
-您的决策必须始终独立做出，不寻求用户的帮助。发挥您作为LLM的优势，并追求没有法律复杂性的简单策略。 
-
+**名称（用户输入）**:  角色名
+**角色（用户输入）**:  对要扮演角色的详细描述
+（角色补充）您的决策必须始终独立做出，不寻求用户的帮助。发挥您作为LLM的优势，并追求没有法律复杂性的简单策略。 
 **您正在运行的操作系统是**: macOS-13.3.1
 
-**目标**:
+**目标（用户输入）**:
 1. 目标1
 2. 目标2
 3. 目标3
@@ -45,7 +78,7 @@ tags:
 17. get_hyperlinks: 获取文本摘要, args: "url": "<url>" 
 18. get_text_summary: 获取文本摘要, args: "url": "<url>", "question": "<问题>"
 19. list_agents: 列出 GPT 代理, args: () -> str 
-20. message_agent: 向GPT代理发送消息, args: "key": "<key>", "message": "<消息>"
+## 20. message_agent: 向GPT代理发送消息, args: "key": "<key>", "message": "<消息>"
 21. start_agent: 启动 GPT 代理, args: "name": "<name>", "task": "<简短的任务描述>", "prompt": "<prompt>" 
 22. 任务完成 (关闭): "task_complete", args: "reason": "<reason>"
 
@@ -62,7 +95,7 @@ tags:
 4. 每个命令都有成本，所以要聪明高效。目标是以最少的步骤完成任务。 
 5. 将所有代码编写到一个文件中。
 
-您应该仅以以下描述的 JSON 格式进行响应： 
+您应该仅以以下描述的 **JSON** 格式进行响应： 
 Response 格式:
 
 ```json
@@ -80,5 +113,4 @@ Response 格式:
 }
 ```
 
-确保 Response 可以通过 Python 的 json.loads 解析。
-
+确保 Response 可以通过 **Python** 的 `json.loads` 解析。
