@@ -1,51 +1,68 @@
 ---
-title: "autogpt 对 OpenAI 调教手册"
+title: "AutoGPT: 让 OpenAI 学会人的思考方式！"
 date: 2023-05-07T23:41:00+08:00
 tags:
 - AI
+- "prompt Engineer"
 ---
 
-### prompt 交互的相关代码
+研读完 AutoGPT，发现他实际提供的是一种思维框架：
 
-- autogpt/
-	- config/
-		- ai_config.py
-			- 读取/设置
-				- 名称
-				- 角色
-				- 目标
-			- 识别运行系统
-	- prompts/
-		- prompt.py
-			- 读取：
-				- 限制条件（Constraints）
-				- 资源（Resources）
-				- 绩效评估（Performance Evaluation）
-		- generator.py
-			- 读取：
-				- 响应格式
-			- 组装：限制条件/资源/绩效评估/响应格式
-	- app.py
-		- 命令（Commands）- agent 实现
-	- commands/
-		- \*.py
-			- 命令（Commands）- 实现
-	- agent/
-		- agent.py
-			- 主控逻辑
-				- 和 openAI 交互
-				- 执行命令
-	- llm/
-		- chat.py
-			-  openAI 交互 - 实现
+- 不断强调：自己是谁，要达成的目标，可以使用的工具以及一些约束；
+	- 这些工具让 AutoGPT 获得更多的外部反馈（包括联网的能力），获得 ChatGPT 所不具备的能力；
+- 提供思考方式，帮助 OpenAI 形成思维方式：
+	- 每次思考，都要不断审视和分析，并且不断自我批评；
+	- 明确以最小成本完成最大的价值；
+- 不断从历史经验和教训中学习；
 
+**AutoGPT 的记忆（memory）模型**：
+- 新发生的事情，通常能记住较为完整的细节，所以直接传递具体信息
+- 但是大脑的容量有限（prompt 的 token 数限制），不可能记住所有的意识，把比较久远的信息进行提炼，形成潜意识（长期记忆），
+- 长期记忆通常是模糊，和人一样，时间旧了就会忘记，但是总保留点影响；为了强化自己的记忆，定期对发生过的比较久远事情进行总结
 
-## 初始 Prompt
+说完意识形态，现在看下他的技术实现细节
 
-**名称（用户输入）**:  角色名
-**角色（用户输入）**:  对要扮演角色的详细描述
-（角色补充）您的决策必须始终独立做出，不寻求用户的帮助。发挥您作为LLM的优势，并追求没有法律复杂性的简单策略。 
-**您正在运行的操作系统是**: macOS-13.3.1
+下面是 **AutoGPT** 每次请求 **OpenAI** 接口的 **prompt**
+
+```json
+[
+  {"role": "System", "content": "{1. 首条 Prompt}"},
+  {"role": "System", "content": "{2. 系统时间}"},
+  {"role": "System", "content": "{3. 长期记忆}"},
+  /* 4. 短期记忆 */
+  {"role": "", "content": "{短期记忆(t-n+1)}"},
+  {"role": "", "content": "{短期记忆(t-n+1)}"},
+  ...
+  {"role": "", "content": "{短期记忆(t)}"},
+  
+  {"role": "System", "content": "{5.预算控制}"},  
+  {"role": "User", "content": "{6. 触发 Prompt}"},
+]
+```
+
+一次请求的总的 **Token** 数为 `fast_token_limit`（默认：4000）, **Token 数量分布**：
+- **Prompt**：
+	- $token\_cnt_{prompt}$: 首条 **Prompt** 的 **Token** 量耗费
+	- $token\_cnt_{sys\_time}$: 系统时间的 **Token** 量耗费
+	- $token\_cnt_{long\_meory}$: 长期记忆的 **Token** 量耗费
+	- $token\_cnt_{short\_memory}$: 短期记忆的 **Token** 量耗费
+	- $token\_cnt_{budget}$: 预算控制的 **Token** 量耗费
+	- $token\_cnt_{trigger}$: 触发 **Prompt** 的 **Token** 量耗费
+- **Response**：1000 个（$token\_cnt_{response}$）
+
+**分布限制**：
+- $token\_cnt_{long\_meory} + token\_cnt_{budget} <= 500$ 
+- $token\_cnt_{short\_memory} <= 4000 - 500 - 1000 - token\_cnt_{prompt} -token\_cnt_{sys\_time} - token\_cnt_{trigger}$
+	- 1000 留给 Response
+	- 500 留给长期记忆和预算控制
+
+### 1. 首条Prompt
+
+#### 具体内容 
+
+**名称**:  `{角色名: 用户输入}`
+**角色**:  `{对要扮演角色的详细描述: 用户输入}`，您的决策必须始终独立做出，不寻求用户的帮助。发挥您作为LLM的优势，并追求没有法律复杂性的简单策略。 
+**您正在运行的操作系统是**: `{运行系统环境}`
 
 **目标（用户输入）**:
 1. 目标1
@@ -78,7 +95,7 @@ tags:
 17. get_hyperlinks: 获取文本摘要, args: "url": "<url>" 
 18. get_text_summary: 获取文本摘要, args: "url": "<url>", "question": "<问题>"
 19. list_agents: 列出 GPT 代理, args: () -> str 
-## 20. message_agent: 向GPT代理发送消息, args: "key": "<key>", "message": "<消息>"
+20. message_agent: 向GPT代理发送消息, args: "key": "<key>", "message": "<消息>"
 21. start_agent: 启动 GPT 代理, args: "name": "<name>", "task": "<简短的任务描述>", "prompt": "<prompt>" 
 22. 任务完成 (关闭): "task_complete", args: "reason": "<reason>"
 
@@ -114,3 +131,38 @@ Response 格式:
 ```
 
 确保 Response 可以通过 **Python** 的 `json.loads` 解析。
+
+### 2. 系统时间
+
+- **内容**：`当前的日期和时间：{系统时间}`
+
+### 3. 长期记忆 和 4. 短期记忆
+
+- 长期记忆是通过历史的总结，加上无法添加到短期记忆的 messge 经过 OpenAI 的 API 生成的总结
+- ==如果可以，尽可能把历史 Prompt 作为上下文传递下去==
+
+![[notes/images/autogpt-记忆模型.svg]]
+
+### 5. 预算控制
+
+剩余预算（`remaining_budget`）：总预算 - 实际已花费
+
+#### 内容
+
+预算内容：你当前的API 剩余预算是 `remaining_budget`
+
+预算判断：
+根据下面判断进行输出
+
+- `remaining_budget = 0`: `预算超支！关闭！\n\n`
+- `remaining_budget < 0.05`: `预算几乎用尽，请优雅地关闭！\n\n`
+- `remaining_budget < 0.01`: `预算接近枯竭，请尽快结束。\n\n`
+- `remaining_budget >= 0.01`: `\n\n`
+
+==最终内容 = 预算内容 + 预算判断==
+
+### 6. 触发 Prompt
+
+-  **内容**：`确定要使用哪个下一个命令，并使用上面指定的格式进行响应:`
+
+

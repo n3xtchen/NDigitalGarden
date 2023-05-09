@@ -4,29 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "adf58fc6ac65c5f2",
+        "id": "0543ab9f1bdf0913",
         "type": "tabs",
         "children": [
           {
-            "id": "e7695ecad4adcabe",
+            "id": "72959d7d314a0d0c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "notes/2023-05-04-autogpt-prompt.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d56f90194eebfa15",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fleet_notes/2023-05-06-kafka-0-lost.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -166,8 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,10 +167,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e7695ecad4adcabe",
+  "active": "72959d7d314a0d0c",
   "lastOpenFiles": [
-    "fleet_notes/2023-04-25-autogpt.md",
+    "notes/images/autogpt-记忆模型.svg",
     "notes/2023-05-04-autogpt-prompt.md",
+    "notes/2023-04-27-AI-intro-Normalization.md",
+    "fleet_notes/2023-04-25-autogpt.md",
+    "2023-05-09.md",
+    "_index.md",
+    "notes/images/autogpt-flow.svg",
     "fleet_notes/2023-05-04-docker-compose-dynamic-config.md",
     "fleet_notes/2023-05-06-kafka-0-lost.md",
     "fleet_notes/2023-05-01-promethues-指标采集格式.md",
@@ -197,8 +189,6 @@
     "notes/2023-04-01-openai-api-fintuning-using.md",
     "notes/2023-03-28-openai-api-finetuning.md",
     "fleet_notes/2023-04-30-node-exporter.md",
-    "_index.md",
-    "notes/2023-04-27-AI-intro-Normalization.md",
     "notes/2023-02-17-SQL-window-function.md",
     "notes/2023-02-16-SQL-basic.md",
     "notes/2022-12-17-Neurons.md",
@@ -206,8 +196,6 @@
     "fleet_notes/2023-03-22-gpt-prompt.md",
     "fleet_notes/2023-03-22-go-config.md",
     "fleet_notes/2023-04-06-orbstack.md",
-    "fleet_notes/2023-04-06-cgroup-pi.md",
-    "fleet_notes/2023-04-14-gpt-model.md",
     "fleet_notes/images/WeChatWorkScreenshot_96c9f961-fc1f-494a-8fe3-104b11d1a1a2.png",
     "fleet_notes/images",
     "fleet_notes/images/WeChatWorkScreenshot_019677bb-b683-4e74-85e6-36717feabc93.png",
@@ -218,8 +206,6 @@
     "notes/images/47ea8697d5f17a3ba0dfa62e8830270c_MD5.svg",
     "notes/images/83eb9cdcbb680e1edee0c46014bad04b_MD5.png",
     "notes/images/05bb6a6bb72acb6123efaa4b5131871a_MD5.png",
-    "notes/images/neurons-bucket.svg",
-    "notes/images/0e1b7cdfd388cb7140942680d4f91f9f_MD5.png",
     "images"
   ]
 }
