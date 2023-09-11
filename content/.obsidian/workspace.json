@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/2023-08-24-vim-file-browse-netrw.md",
+                "file": "notes/2023-09-08-vim-buffer.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/2023-08-24-vim-file-browse-netrw.md",
+                "file": "notes/2023-09-08-vim-buffer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/2023-08-24-vim-file-browse-netrw.md",
+                "file": "notes/2023-09-08-vim-buffer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/2023-08-24-vim-file-browse-netrw.md"
+                "file": "notes/2023-09-08-vim-buffer.md"
               }
             }
           },
@@ -191,46 +191,46 @@
   },
   "active": "1a4d4e4c41d7b400",
   "lastOpenFiles": [
-    "fleet_notes/2023-04-15-vim-ide.md",
-    "notes/2023-08-24-vim-file-browse-netrw.md",
-    "2023-08-11-pip-tools.md",
-    "fleet_notes/2023-04-20-mysql-性能优化.md",
-    "fleet_notes/2023-04-20-torch.md",
-    "fleet_notes/2023-04-14-gpt-model.md",
-    "notes/2023-02-18-mysql-trick.md",
-    "fleet_notes/2023-04-06-cgroup-pi.md",
     "未命名.md",
-    "notes/2023-08-19-vim-indent.md",
-    "2023-08-04-data-literacy.md",
-    "_index.md",
-    "fleet_notes/2023-04-24-vim-map.md",
-    "fleet_notes/2023-07-31-机器学习平台.md",
-    "509ff9e47f8032bbdb255a34862f73a5_MD5.svg",
-    "fleet_notes/客厅设计.md",
-    "fleet_notes/cloudflare.md",
+    "notes/2023-09-08-vim-buffer.md",
+    "fleet_notes/客厅柜子设计.md",
+    "fleet_notes/2023-08-11-pip-tools.md",
+    "fleet_notes/2023-08-04-data-literacy.md",
+    "fleet_notes/2023-06-26-sql.md",
     "fleet_notes/2023-07-31-osx-守护进程.md",
-    "fleet_notes/2023-07-10-健身.md",
+    "fleet_notes/2023-07-31-机器学习平台.md",
+    "fleet_notes/cloudflare.md",
     "fleet_notes/2023-06-27-numpy入门.md",
+    "fleet_notes/2023-07-10-健身.md",
+    "fleet_notes/2023-06-25-技术团队规划.md",
+    "fleet_notes/2023-06-19-telegrah.md",
+    "fleet_notes/2023-06-19-docker-network.md",
+    "fleet_notes/2023-06-14-场景化设计.md",
     "fleet_notes/2023-03-21-sql-gpt.md",
-    "fleet_notes/2023-05-04-docker-compose-dynamic-config.md",
-    "fleet_notes/2023-04-30-node-exporter.md",
-    "fleet_notes/2023-05-01-promethues-指标采集格式.md",
-    "fleet_notes/2023-03-22-gpt-prompt.md",
     "fleet_notes/2023-03-22-go-config.md",
-    "fleet_notes/images/0ef61abd1ef3edd0193ad0a5c2417c6f_MD5.png",
-    "fleet_notes/images/d8c3ff22b98677d6dfd96217e35c5f96_MD5.png",
-    "fleet_notes/images/56460f9d40f0262ede229defe1ac2aab_MD5.png",
-    "upload-images.jianshu.io/upload_images/2267652-0a5869ad6a8f35fd.png?imageMogr2/auto-orient/strip.md",
-    "fleet_notes/images/ca94086f2e737c835296d5220697fe94_MD5.png",
+    "fleet_notes/2023-03-22-gpt-prompt.md",
+    "fleet_notes/2023-04-06-cgroup-pi.md",
+    "fleet_notes/2023-04-06-devops-cicd.md",
+    "fleet_notes/2023-04-06-orbstack.md",
+    "fleet_notes/2023-04-14-gpt-model.md",
+    "fleet_notes/2023-04-15-vim-ide.md",
+    "private/private-note.md",
+    "templates/post.md",
+    "fleet_notes/images/e56dbd3d52507451936779ba9b984b5b_MD5.png",
+    "fleet_notes/images/e636462dfea75ce7491f0d230afb23d6_MD5.png",
+    "fleet_notes/images/efa96cd58060eb321addea7d7ac38524_MD5.png",
+    "fleet_notes/images/fbd961f0360a745eddacf00bc1f447ac_MD5.png",
+    "fleet_notes/images/WeChatWorkScreenshot_96c9f961-fc1f-494a-8fe3-104b11d1a1a2.png",
+    "fleet_notes/images/WeChatWorkScreenshot_019677bb-b683-4e74-85e6-36717feabc93.png",
+    "fleet_notes/images/企业微信截图_4b67f535-5387-46e9-b71f-64d23d285ef3.png",
+    "fleet_notes/images/企业微信截图_f21104a2-3a0b-455e-bf9f-bc162949773b.png",
+    "fleet_notes/images/企业微信截图_f50a0774-60dd-410a-a212-a3ffc9f2d617.png",
+    "fleet_notes/images/3f5d5122a39d594302a489f4a2af9c87_MD5.png",
+    "fleet_notes/客厅设计.md",
     "upload-images.jianshu.io/upload_images/2267652-0a5869ad6a8f35fd.png?imageMogr2/auto-orient",
     "upload-images.jianshu.io/upload_images/2267652-0a5869ad6a8f35fd.png?imageMogr2",
     "upload-images.jianshu.io/upload_images",
     "upload-images.jianshu.io",
-    "fleet_notes/images/7f7a4fc70225bce22c6a5f6feeba2e86_MD5.png",
-    "fleet_notes/images/28a937accccb4b3c39ce1cc171c1f535_MD5.png",
-    "fleet_notes/images/29effb2d335ca2cfafb98a2a2bb48d42_MD5.png",
-    "fleet_notes/images/560e475447e30f3c24ddda7040227b40_MD5.png",
-    "fleet_notes/images/fbd961f0360a745eddacf00bc1f447ac_MD5.png",
     "fleet_notes/技术管理/设计团队管理经验总结_上仙修行-站酷ZCOOL (6_25_2023 5_13_58 PM).html",
     "fleet_notes/技术管理/程序员 - 前端 Leader 如何做好团队规划？阿里内部培训总结公开 - 个人文章 - SegmentFault 思否 (6_25_2023 5_14_09 PM).html",
     "fleet_notes/技术管理/技术团队从几10人到上千人，分别需要什么样的CTO ？ - 文章详情 (6_25_2023 5_14_33 PM).html",
