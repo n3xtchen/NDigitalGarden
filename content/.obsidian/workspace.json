@@ -169,9 +169,19 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "8f5221cbaee57264",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -191,8 +201,12 @@
   },
   "active": "1a4d4e4c41d7b400",
   "lastOpenFiles": [
-    "未命名.md",
+    "notes/2023-08-24-vim-file-browse-netrw.md",
     "notes/2023-09-08-vim-buffer.md",
+    "notes/2023-09-14-vimscript-basic.md",
+    "未命名.md",
+    "_index.md",
+    "notes/2023-08-19-vim-indent.md",
     "fleet_notes/客厅柜子设计.md",
     "fleet_notes/2023-08-11-pip-tools.md",
     "fleet_notes/2023-08-04-data-literacy.md",
@@ -213,9 +227,6 @@
     "fleet_notes/2023-04-06-devops-cicd.md",
     "fleet_notes/2023-04-06-orbstack.md",
     "fleet_notes/2023-04-14-gpt-model.md",
-    "fleet_notes/2023-04-15-vim-ide.md",
-    "private/private-note.md",
-    "templates/post.md",
     "fleet_notes/images/e56dbd3d52507451936779ba9b984b5b_MD5.png",
     "fleet_notes/images/e636462dfea75ce7491f0d230afb23d6_MD5.png",
     "fleet_notes/images/efa96cd58060eb321addea7d7ac38524_MD5.png",
@@ -226,7 +237,6 @@
     "fleet_notes/images/企业微信截图_f21104a2-3a0b-455e-bf9f-bc162949773b.png",
     "fleet_notes/images/企业微信截图_f50a0774-60dd-410a-a212-a3ffc9f2d617.png",
     "fleet_notes/images/3f5d5122a39d594302a489f4a2af9c87_MD5.png",
-    "fleet_notes/客厅设计.md",
     "upload-images.jianshu.io/upload_images/2267652-0a5869ad6a8f35fd.png?imageMogr2/auto-orient",
     "upload-images.jianshu.io/upload_images/2267652-0a5869ad6a8f35fd.png?imageMogr2",
     "upload-images.jianshu.io/upload_images",
