@@ -4,40 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "6452e46a1e27a908",
+        "id": "501ade466b61ba50",
         "type": "tabs",
         "children": [
           {
-            "id": "11a6fa22534ae762",
+            "id": "b1cfd0335600e973",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fleet_notes/2023-04-15-vim-ide.md",
+                "file": "notes/2023-10-27-sed-mac-linux.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1a4d4e4c41d7b400",
+            "id": "a313ddb43e6638e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/2023-09-14-vimscript-variable-type.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "822ef5af444f27cc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/2023-08-24-vim-file-browse-netrw.md",
+                "file": "notes/2023-10-27-sed-mac-linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/2023-09-14-vimscript-variable-type.md",
+                "file": "notes/2023-10-27-sed-mac-linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/2023-09-14-vimscript-variable-type.md",
+                "file": "notes/2023-10-27-sed-mac-linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/2023-09-14-vimscript-variable-type.md"
+                "file": "notes/2023-10-27-sed-mac-linux.md"
               }
             }
           },
@@ -211,34 +199,35 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1a4d4e4c41d7b400",
+  "active": "e0e94725ad525bed",
   "lastOpenFiles": [
-    "notes/2023-08-24-vim-file-browse-netrw.md",
-    "notes/2023-09-14-vimscript-variable-type.md",
-    "2023-09-21-vimscript-loop-list-dict.md",
+    "2023-10-18-hugo-intro.md",
+    "未命名 1.md",
+    "notes/2023-10-27-sed-mac-linux.md",
     "notes/2023-09-08-vim-buffer.md",
-    "2023-09-14-vim-register.md",
-    "未命名.md",
-    "_index.md",
-    "notes/2023-08-19-vim-indent.md",
-    "fleet_notes/客厅柜子设计.md",
-    "fleet_notes/2023-08-11-pip-tools.md",
-    "fleet_notes/2023-08-04-data-literacy.md",
-    "fleet_notes/2023-06-26-sql.md",
-    "fleet_notes/2023-07-31-osx-守护进程.md",
-    "fleet_notes/2023-07-31-机器学习平台.md",
-    "fleet_notes/cloudflare.md",
-    "fleet_notes/2023-06-27-numpy入门.md",
-    "fleet_notes/2023-07-10-健身.md",
-    "fleet_notes/2023-06-25-技术团队规划.md",
-    "fleet_notes/2023-06-19-telegrah.md",
-    "fleet_notes/2023-06-19-docker-network.md",
+    "notes/2023-09-14-vimscript-variable-type.md",
+    "notes/2023-08-24-vim-file-browse-netrw.md",
     "fleet_notes/2023-06-14-场景化设计.md",
-    "fleet_notes/2023-03-21-sql-gpt.md",
+    "fleet_notes/2023-05-19-stable-diff.md",
+    "fleet_notes/客厅柜子设计.md",
+    "fleet_notes/客厅设计.md",
+    "fleet_notes/cloudflare.md",
+    "fleet_notes/2023-08-11-pip-tools.md",
+    "2023-09-21-vimscript-loop-list-dict.md",
+    "2023-10-08.md",
+    "2023-09-14-vim-register.md",
+    "notes/2023-04-12-pytorch-tranformers-conda-setup.md",
+    "notes/2023-04-27-AI-intro-Normalization.md",
+    "notes/2023-05-04-autogpt-prompt.md",
+    "notes/2023-08-19-vim-indent.md",
+    "509ff9e47f8032bbdb255a34862f73a5_MD5.svg",
+    "未命名.md",
+    "资深程序员为什么效率低.md",
+    "notes/2023-02-22-proxy.md",
     "fleet_notes/2023-03-22-go-config.md",
-    "fleet_notes/2023-03-22-gpt-prompt.md",
-    "fleet_notes/2023-04-06-cgroup-pi.md",
-    "fleet_notes/2023-04-06-devops-cicd.md",
+    "fleet_notes/2023-04-15-vim-ide.md",
+    "_index.md",
+    "fleet_notes/2023-08-04-data-literacy.md",
     "fleet_notes/images/e56dbd3d52507451936779ba9b984b5b_MD5.png",
     "fleet_notes/images/e636462dfea75ce7491f0d230afb23d6_MD5.png",
     "fleet_notes/images/efa96cd58060eb321addea7d7ac38524_MD5.png",
@@ -248,7 +237,6 @@
     "fleet_notes/images/企业微信截图_4b67f535-5387-46e9-b71f-64d23d285ef3.png",
     "fleet_notes/images/企业微信截图_f21104a2-3a0b-455e-bf9f-bc162949773b.png",
     "fleet_notes/images/企业微信截图_f50a0774-60dd-410a-a212-a3ffc9f2d617.png",
-    "fleet_notes/images/3f5d5122a39d594302a489f4a2af9c87_MD5.png",
     "upload-images.jianshu.io/upload_images/2267652-0a5869ad6a8f35fd.png?imageMogr2/auto-orient",
     "upload-images.jianshu.io/upload_images/2267652-0a5869ad6a8f35fd.png?imageMogr2",
     "upload-images.jianshu.io/upload_images",
