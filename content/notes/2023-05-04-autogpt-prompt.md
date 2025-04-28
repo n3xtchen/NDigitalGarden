@@ -141,7 +141,7 @@ Response 格式:
 - 长期记忆是通过历史的总结，加上无法添加到短期记忆的 messge 经过 OpenAI 的 API 生成的总结
 - ==如果可以，尽可能把历史 Prompt 作为上下文传递下去==
 
-![[notes/images/autogpt-记忆模型.svg]]
+![[notes/images/autogpt-memory-model.svg]]
 
 ### 5. 预算控制
 
