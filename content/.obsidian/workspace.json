@@ -4,35 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "501ade466b61ba50",
+        "id": "919d0cf94a953bc2",
         "type": "tabs",
         "children": [
           {
-            "id": "b1cfd0335600e973",
+            "id": "20ccb567941fcc3d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/2023-10-27-sed-mac-linux.md",
+                "file": "notes/2023-11-05-how-to-manage-your-plan.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "a313ddb43e6638e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/2023-10-27-sed-mac-linux.md",
-                "mode": "source",
-                "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "2023-11-05-how-to-manage-your-plan"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -51,8 +40,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -61,13 +53,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#tensorflow",
+                "query": "tag:#setup",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -75,7 +69,9 @@
             "type": "leaf",
             "state": {
               "type": "starred",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "插件不再活动"
             }
           },
           {
@@ -87,7 +83,9 @@
                 "file": "fleet_notes/2023-03-22-go-config.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "2023-03-22-go-config"
             }
           },
           {
@@ -95,7 +93,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/2023-10-27-sed-mac-linux.md",
+                "file": "notes/2023-11-05-how-to-manage-your-plan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "2023-11-05-how-to-manage-your-plan 的反向链接列表"
             }
           },
           {
@@ -135,10 +137,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/2023-10-27-sed-mac-linux.md",
+                "file": "notes/2023-11-05-how-to-manage-your-plan.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "2023-11-05-how-to-manage-your-plan 的出链列表"
             }
           },
           {
@@ -148,8 +152,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -158,8 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/2023-10-27-sed-mac-linux.md"
-              }
+                "file": "notes/2023-11-05-how-to-manage-your-plan.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "2023-11-05-how-to-manage-your-plan 的大纲"
             }
           },
           {
@@ -167,7 +180,9 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -176,12 +191,15 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
-              }
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -199,44 +217,44 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e0e94725ad525bed",
+  "active": "20ccb567941fcc3d",
   "lastOpenFiles": [
-    "2023-10-18-hugo-intro.md",
-    "未命名 1.md",
-    "notes/2023-10-27-sed-mac-linux.md",
-    "notes/2023-09-08-vim-buffer.md",
-    "notes/2023-09-14-vimscript-variable-type.md",
+    "notes/images/autogpt-记忆模型.svg",
+    "private/private-note.md",
+    "fleet_notes/2023-09-14-vim-register.md",
+    "fleet_notes/2023-09-21-vimscript-loop-list-dict.md",
+    "fleet_notes/2023-10-29-.md",
+    "fleet_notes/资深程序员为什么效率低.md",
+    "notes/images/plan_manage-pos.png",
+    "notes/images/plan_manage-4quadrant.png",
+    "notes/images/plan_manage-note_month.png",
+    "notes/images/plan_manage-1thing1paper.png",
+    "notes/images/plan_manage_note.png",
+    "notes/2023-11-05-how-to-manage-your-plan.md",
     "notes/2023-08-24-vim-file-browse-netrw.md",
-    "fleet_notes/2023-06-14-场景化设计.md",
-    "fleet_notes/2023-05-19-stable-diff.md",
-    "fleet_notes/客厅柜子设计.md",
-    "fleet_notes/客厅设计.md",
-    "fleet_notes/cloudflare.md",
-    "fleet_notes/2023-08-11-pip-tools.md",
-    "2023-09-21-vimscript-loop-list-dict.md",
-    "2023-10-08.md",
-    "2023-09-14-vim-register.md",
-    "notes/2023-04-12-pytorch-tranformers-conda-setup.md",
-    "notes/2023-04-27-AI-intro-Normalization.md",
     "notes/2023-05-04-autogpt-prompt.md",
-    "notes/2023-08-19-vim-indent.md",
+    "notes/2023-02-27-jupyter-multi-env.md",
+    "fleet_notes/2023-08-11-pip-tools.md",
+    "fleet_notes/2023-05-19-stable-diff.md",
+    "fleet_notes/2023-05-09-autogpt.md",
+    "fleet_notes/2023-05-06-kafka-0-lost.md",
+    "fleet_notes/2023-05-04-docker-compose-dynamic-config.md",
+    "fleet_notes/2023-05-04-bert.md",
+    "fleet_notes/2023-05-01-promethues-指标采集格式.md",
+    "fleet_notes/2023-04-30-node-exporter.md",
+    "fleet_notes/2023-04-25-autogpt.md",
+    "fleet_notes/2023-04-14-gpt-model.md",
+    "fleet_notes/2023-04-06-devops-cicd.md",
+    "fleet_notes/2023-04-06-orbstack.md",
+    "fleet_notes/2023-04-06-cgroup-pi.md",
+    "notes/2023-09-08-vim-buffer.md",
+    "fleet_notes/2023-06-19-docker-network.md",
+    "notes/2023-09-14-vimscript-variable-type.md",
     "509ff9e47f8032bbdb255a34862f73a5_MD5.svg",
-    "未命名.md",
-    "资深程序员为什么效率低.md",
-    "notes/2023-02-22-proxy.md",
-    "fleet_notes/2023-03-22-go-config.md",
-    "fleet_notes/2023-04-15-vim-ide.md",
-    "_index.md",
-    "fleet_notes/2023-08-04-data-literacy.md",
     "fleet_notes/images/e56dbd3d52507451936779ba9b984b5b_MD5.png",
     "fleet_notes/images/e636462dfea75ce7491f0d230afb23d6_MD5.png",
     "fleet_notes/images/efa96cd58060eb321addea7d7ac38524_MD5.png",
     "fleet_notes/images/fbd961f0360a745eddacf00bc1f447ac_MD5.png",
-    "fleet_notes/images/WeChatWorkScreenshot_96c9f961-fc1f-494a-8fe3-104b11d1a1a2.png",
-    "fleet_notes/images/WeChatWorkScreenshot_019677bb-b683-4e74-85e6-36717feabc93.png",
-    "fleet_notes/images/企业微信截图_4b67f535-5387-46e9-b71f-64d23d285ef3.png",
-    "fleet_notes/images/企业微信截图_f21104a2-3a0b-455e-bf9f-bc162949773b.png",
-    "fleet_notes/images/企业微信截图_f50a0774-60dd-410a-a212-a3ffc9f2d617.png",
     "upload-images.jianshu.io/upload_images/2267652-0a5869ad6a8f35fd.png?imageMogr2/auto-orient",
     "upload-images.jianshu.io/upload_images/2267652-0a5869ad6a8f35fd.png?imageMogr2",
     "upload-images.jianshu.io/upload_images",

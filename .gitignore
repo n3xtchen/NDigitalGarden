@@ -12,3 +12,4 @@ static/linkmap
 assets/indices/*.json
 resources
 
+content/private/
